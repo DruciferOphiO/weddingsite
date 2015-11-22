@@ -3,12 +3,15 @@
     <head>
          <title>A+A May 5th 2016</title>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <script src="js/jquery-1.11.3.min.js"></script>
+        <script src="js/masonry.pkgd.min.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-        <script src="js/jquery.stellar.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/jquery.stellar.js"></script>
         <script src="js/jquery.easing-min.js"></script>
         <script src="js/jquery.waypoints.js"></script>
         <script src="js/main.js"></script>
@@ -17,15 +20,15 @@
     </head>
     <body>
         
-    <nav class="navigation">
+    <nav class="navigation hidden-xs">
         <ul>
-            <li data-slide='1' ><a class="leftside" href="a">LOVE STORY</a></li>
-            <li data-slide='2' ><a class="leftside" href="a">WEDDING</a></li>
-            <li data-slide='3' ><a class="leftside" href="a">THE PARTY</a></li>
-            <li data-slide='4' ><div></div></li>
-            <li data-slide='5' ><a class="rightside" href="a">THE REGISTRY</a></li>
-            <li data-slide='6' ><a class="rightside" href="a">GALLERY</a></li>
-            <li data-slide='7' ><a class="rightside" href="a">RSVP HERE</a></li>
+            <li data-slide='2' ><a class="leftside" href="a">LOVE STORY </a></li>
+            <li data-slide='3' ><a class="leftside" href="a">WEDDING</a></li>
+            <li data-slide='9' ><a class="leftside" href="a">THE PARTY</a></li>
+            <li data-slide='' ><div></div></li>
+            <li data-slide='10' ><a class="rightside" href="a">THE REGISTRY</a></li>
+            <li data-slide='14' ><a class="rightside" href="a">GALLERY</a></li>
+            <li data-slide='15' ><a class="rightside" href="a">RSVP HERE</a></li>
         </ul>
         <div class="navigation-background">
             <div class="monogram">
@@ -36,52 +39,419 @@
             </div>
         </div>
     </nav>
+    <div class="navbar navbar-inverse navbar-static-top mobileNavbar visible-xs">
+        <div class="container">
+            <div class="mobileLogo">Our wedding logo</div>
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse navHeaderCollapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li data-slide='2' ><a class="mobileNavOption" data-toggle="collapse" data-target=".navHeaderCollapse" href="a">LOVE STORY </a></li>
+                    <li data-slide='3' ><a class="mobileNavOption" data-toggle="collapse" data-target=".navHeaderCollapse" href="a">WEDDING</a></li>
+                    <li data-slide='9' ><a class="mobileNavOption" data-toggle="collapse" data-target=".navHeaderCollapse" href="a">THE PARTY</a></li>
+                    <li data-slide='10' ><a class="mobileNavOption" data-toggle="collapse" data-target=".navHeaderCollapse" href="a">THE REGISTRY</a></li>
+                    <li data-slide='14' ><a class="mobileNavOption" data-toggle="collapse" data-target=".navHeaderCollapse" href="a">GALLERY</a></li>
+                    <li data-slide='15' ><a class="mobileNavOption" data-toggle="collapse" data-target=".navHeaderCollapse" href="a">RSVP HERE</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
     
     <div class="main">
-        <div class="slide" id="slide1" data-slide='data-slide1' data-stellar-background-ratio="1.35">
+        <div class="slide" id="slide1" data-slide='1' data-stellar-background-ratio="1.35">
             <div class="container" id="container1">
                 <div class="row" id="row1">
-                    <div class="col-md-12" id="date" data-stellar-ratio="0" ><p id="text-center" class="text-center">May 6, 201 <span class="font-numbers">6</span></p></div>
+                    <div class="col-md-12 col-sm-12" id="date" data-stellar-ratio="0"><p id="text-center" class="text-center">May 6, 20<span class="numbers">16</span></p></div>
                 </div>
             </div>
-            
         </div>
-        <div class="slide" id="slide2" data-slide='data-slide2' data-stellar-background-ratio="0.5">
+        <div class="slide" id="slide2" data-slide='2' data-stellar-background-ratio="0.5">
             <div class="container" id="container2">
                 <div class="row" id="row2">
-                    <div class="col-md-6 col-sm-12" id="leftHalf">
+                    <div class="col-md-6 col-sm-12 halfPage" id="leftHalf">
                         <div class="imageContainer" id="drewImageContainer">
                             <img class="framedPic" id="drewImage" src="img/DrewinFrame.png">
                         </div>
                         <div class="lovetext" id="drewText">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,\n
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi\n
-                            ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit\n
-                            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur\n
-                            sint occaecat cupidatat non proident, sunt in culpa qui officia \n
-                            deserunt mollit anim id est laborum</p>
+                            <p>From our first date I knew Angelica was different. She wasn&#146;t just pretty and sweet,
+                            but she had that special something. She is smart and she has style. Her ambition, her
+                            open-mindedness, her everything made her more than just a woman to me. We went out for
+                            Coldstone on our first date and I couldn&#146;t get enough of her after that day. I called
+                            her all the time and wanted to spend all of my time with her. It wasn&#146;t long before I
+                            wanted to make us official. As stayed together our relationship strengthen to the point
+                            where I knew I had to take that next step. I though for months about the most romantic way
+                            to profess my love. We took a trip to Italy together and I knew that was my chance.<span class="bignames">Andrew</span></p>
                         </div>
                     </div>
-                    <div class="col-md-6 col-sm-12" id="rightHalf">
+                    <div class="col-md-6 col-sm-12 halfPage" id="rightHalf">
                         <div class="imageContainer" id="gelImageContainer">
                             <img class="framedPic" id="gelImage" src="img/AngelicainFrame.png">
                         </div>
                         <div class="lovetext" id="gelText">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,\n
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi\n
-                            ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit\n
-                            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur\n
-                            sint occaecat cupidatat non proident, sunt in culpa qui officia \n
-                            deserunt mollit anim id est laborum</p>
+                            <p>The year was 2007 and I was at a restaurant in Hampton
+                            with two of my girlfriends. Andrew, a fellow Hampton U. student,
+                            walked over and invited us to go bowling with his friends. He was a horrible bowler
+                            with a great smile.  While driving back to campus, he texted my friend
+                            for my number. But somehow he never got it (lol). About a month later, I ran
+                            into him at another restaurant but he was on a date. Thinking about how nice
+                            and handsome he was at the bowling alley, I decided to message him on this new
+                            website called Facebook. And he replied. Several dates (and years) later, Andrew
+                            and I took our first European trip to Italy. When he proposed at the Uffizi
+                            Gallery in Florence (in front of the Birth of Venus painting, no less), I
+                            couldn&#146;t help but reflect back to that day in 2007. By the way, I still
+                            don&#146;t know how he managed traveling around Italy without losing the ring or
+                            accidentally telling me. It was THE most romantic day of my life.
+                            <span class="bignames">Angelica</span></p>
                         </div>
                         
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="slide hidden-xs" id="slide3" data-slide='3' data-stellar-background-ratio="0.58">
+            <div class="container" id="container3">
+            </div>
             
         </div>
+        <div class="slide visible-xs" id="slide3mobile" data-slide='3' data-stellar-background-ratio="0.95">
+            <div class="container" id="container3mobile">
+            </div>
+            
+        </div>
+        <div class="slide" id="slide4" data-slide='4' data-stellar-background-ratio="0">
+            <div class="container" id="container4">
+                <div class="row" id="row4">
+                    <br/><br/>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-3 col-sm-12" id="directionsContainer">
+                        <div id="venueAddress">
+                            <p class="detailkicker">Ceremony & Reception</p>
+                            <p class="detailHeader">Cedar Hall <span class="detailsecond">312 Broadway Rd. <br/> Memphis, TN 38135</span></p>
+                            <a id="directions" class="detailClick">Click here for directions</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12" id="cedarHistory">
+                        <p class="detailText">Built in 1846, Cedar Hall is one of the oldest properties remaining
+                        in Bartlett, TN. Not only is it a great place for a wedding, but the house is a quaint bed
+                        & breakfast. The ceremony will be held outside at 6:00pm in the formal garden behind the house.
+                        Cocktail hour, in the english gardens, will immediately follow. Afterwards, the reception will
+                        be held in The Stables at Cedar Hall where there will be dinner, desserts, drinks and dancing!
+                        The venue has plenty of parking on site with attendants to direct you to where you need to go.
+                        Cocktail attire requested.</p>
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="slide hidden-xs" id="slide5" data-slide='5' data-stellar-background-ratio="0.58">
+            <div class="container" id="container5">
+            </div>
+            
+        </div>
+        <div class="slide visible-xs" id="slide5mobile" data-slide='5' data-stellar-background-ratio="0.95">
+            <div class="container" id="container5mobile">
+            </div>
+            
+        </div>
+        <div class="slide" id="slide6" data-slide='6' data-stellar-background-ratio="0">
+            <div class="container" id="container6">
+                <div class="row" id="row6">
+                    <br/><br/>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-3 col-sm-12" id="hotelsContainer">
+                        <div class="hotel">
+                            <p class="detailkicker">Hotels & Accommodations</p>
+                            <p class="hotelname detailHeader">Westin Beale St</p>
+                            <a class="hotelClick detailClick">Click here to reserve</a>
+                        </div><br/>
+                        <div class="hotel">
+                            <p class="hotelname detailHeader">Holiday Inn & Suites</p>
+                            <a class="hotelClick detailClick">Click here to reserve</a>
+                        </div><br/>
+                        <div class="hotel">
+                            <p class="hotelname detailHeader">Crowne Plaza Dwtn</p>
+                            <a class="hotelClick detailClick">Click here to reserve</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12" id="cedarHistory">
+                        <p class="detailText">We&#146;ve reserved a block of rooms at three hotels to fit your travel needs.
+                        The Westin Memphis Beale Street and the Crowne Plaza Memphis Downtown are about a 25-30 minute
+                        drive to Cedar Hall. The one closest to the venue is the Holiday Inn & Suites Memphis- Wolfchase
+                        Galleria at 12 minutes away. You can book directly from our block by clicking on your desired
+                        hotel below. The negotiated rates for each hotel: $140/night for the Holiday Inn; $189/night for
+                        the Crowne Plaza; and $189/night for the Westin.</p>
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="slide" id="slide7" data-slide='7' data-stellar-background-ratio="0.58">
+            <div class="container" id="container7">
+            </div>
+            
+        </div>
+        <div class="slide" id="slide8" data-slide='8' data-stellar-background-ratio="0">
+            <div class="container" id="container8">
+                <div class="row" id="row8">
+                    <br/><br/>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-3 col-sm-12" id="rehersal">
+                        <div id="rehersal">
+                            <p class="detailkicker">Additional Information</p>
+                            <p class="rehersalAddress detailHeader">Felicia Suzanne&#146;s <span class="detailsecond">80 Monroe Ave L1 <br/> Memphis, TN</span></p>
+                            <a class="rehersalClick detailClick">Click here for directions</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12" id="cedarHistory">
+                        <p class="detailText">During the month of May, the weather in Memphis can be quite warm. On
+                        May 6, 2015, the high was 86 degrees and the low was 64 degrees, so please dress accordingly.
+                        Memphis is known for music (Beale Street), food and, of course, being the home of Elvis Presley.
+                        We created a Welcome to Memphis Guide of our favorite places. The New York Times has a really
+                        great video on spending 36 Hours in Memphis. By the way, our rehearsal dinner at 6pm on Thursday,
+                        May 5 is open to anyone who wants to join us at Felicia Suzanne&#146;s.</p>
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="slide" id="slide9" data-slide='9' data-stellar-background-ratio="0">
+            <div class="container" id="container9">
+                <div class="col-md-3 col-sm-12">
+                    <div class="picNtextContainer grid-item" id="partyPicText1">
+                        <div class="partyPic"><img class="framedPartyPic" id="partyPic1" src="img/Raven.png"></div>
+                        <div class="partText" id="partyText1"><p>;lasjdf ;lsfdksljf ;dslk fsdl;k fjlsd;k fl;sdk flsdk fldsk fldsk fldksf dslf sdlkf sdlk fjldsk fjls;dk f;lsdfj </p></div>
+                    </div>
+                    <div class="picNtextContainer grid-item" id="partyPicText5">
+                        <div class="partyPic"><img class="framedPartyPic" id="partyPic5" src="img/Vanessa.png"></div>
+                        <div class="partText" id="partyText5"><p>;lasjdf ;lsfdksljf ;dslk fsdl;k fjlsd;k fl;sdk flsdk fldsk fldsk fldksf dslf sdlkf sdlk fjldsk fjls;dk f;lsdfj </p></div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <div class="picNtextContainer grid-item" id="partyPicText2">
+                        <div class="partyPic"><img class="framedPartyPic" id="partyPic2" src="img/Constance.png"></div>
+                        <div class="partText" id="partyText2"><p>;lasjdf ;lsfdksljf ;dslk fsdl;k fjlsd;k fl;sdk flsdk fldsk fldsk fldksf dslf sdlkf sdlk fjldsk fjls;dk f;lsdfj </p></div>
+                    </div>
+                    <div class="picNtextContainer grid-item" id="partyPicText6">
+                        <div class="partyPic"><img class="framedPartyPic" id="partyPic6" src="img/Ariel.png"></div>
+                        <div class="partText" id="partyText6"><p>;lasjdf ;lsfdksljf ;dslk fsdl;k fjlsd;k fl;sdk flsdk fldsk fldsk fldksf dslf sdlkf sdlk fjldsk fjls;dk f;lsdfj </p></div>
+                    </div>
+                    <div class="picNtextContainer grid-item" id="partyPicText10">
+                        <div class="partyPic"><img class="framedPartyPic" id="partyPic10" src="img/Dwayne.png"></div>
+                        <div class="partText" id="partyText10"><p>;lasjdf ;lsfdksljf ;dslk fsdl;k fjlsd;k fl;sdk flsdk fldsk fldsk fldksf dslf sdlkf sdlk fjldsk fjls;dk f;lsdfj </p></div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <div class="picNtextContainer grid-item" id="partyPicText3">
+                        <div class="partyPic"><img class="framedPartyPic" id="partyPic3" src="img/Erica.png"></div>
+                        <div class="partText" id="partyText3"><p>;lasjdf ;lsfdksljf ;dslk fsdl;k fjlsd;k fl;sdk flsdk fldsk fldsk fldksf dslf sdlkf sdlk fjldsk fjls;dk f;lsdfj </p></div>
+                    </div>
+                    <div class="picNtextContainer grid-item" id="partyPicText7">
+                        <div class="partyPic"><img class="framedPartyPic" id="partyPic7" src="img/Mark.png"></div>
+                        <div class="partText" id="partyText7"><p>;lasjdf ;lsfdksljf ;dslk fsdl;k fjlsd;k fl;sdk flsdk fldsk fldsk fldksf dslf sdlkf sdlk fjldsk fjls;dk f;lsdfj </p></div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <div class="picNtextContainer grid-item" id="partyPicText4">
+                        <div class="partyPic"><img class="framedPartyPic" id="partyPic4" src="img/Bianca.png"></div>
+                        <div class="partText" id="partyText4"><p>;lasjdf ;lsfdksljf ;dslk fsdl;k fjlsd;k fl;sdk flsdk fldsk fldsk fldksf dslf sdlkf sdlk fjldsk fjls;dk f;lsdfj </p></div>
+                    </div>
+                    <div class="picNtextContainer grid-item" id="partyPicText8">
+                        <div class="partyPic"><img class="framedPartyPic" id="partyPic8" src="img/Stacy.png"></div>
+                        <div class="partText" id="partyText8"><p>;lasjdf ;lsfdksljf ;dslk fsdl;k fjlsd;k fl;sdk flsdk fldsk fldsk fldksf dslf sdlkf sdlk fjldsk fjls;dk f;lsdfj </p></div>
+                    </div>
+                    <div class="picNtextContainer grid-item" id="partyPicText9">
+                        <div class="partyPic"><img class="framedPartyPic" id="partyPic9" src="img/Cece.png"></div>
+                        <div class="partText" id="partyText9"><p>;lasjdf ;lsfdksljf ;dslk fsdl;k fjlsd;k fl;sdk flsdk fldsk fldsk fldksf dslf sdlkf sdlk fjldsk fjls;dk f;lsdfj </p></div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="slide" id="slide10" data-slide='10' data-stellar-background-ratio="0.58">
+            <div class="container" id="container10">
+            </div>
+            
+        </div>
+        <div class="slide" id="slide11" data-slide='11' data-stellar-background-ratio="0">
+            <div class="container" id="container11">
+                <div class="row" id="row1">
+                    <br/><br/>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-3 col-sm-12" id="rehersal">
+                        <div id="rehersal">
+                            <p class="rehersalAddress detailHeader">Hatch My House</p>
+                            <a class="rehersalClick detailClick">Click here to gift</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12" id="cedarHistory">
+                        <p class="detailText">We can&#146;t wait to start our newlywed life in 2016! We love living in the
+                        New York City area and are hoping to find a new place to call home after our wedding. Since NYC
+                        can be very expensive, we decided to use Hatch My House as one of our registries. They are a
+                        registry website where you can contribute to our first house fund. We are deeply appreciative for
+                        any gift that you can give.</p>
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="slide" id="slide12" data-slide='12' data-stellar-background-ratio="0.58">
+            <div class="container" id="container12">
+            </div>
+            
+        </div>
+        <div class="slide" id="slide13" data-slide='13' data-stellar-background-ratio="0">
+            <div class="container" id="container13">
+                <div class="row" id="row13">
+                    <br/><br/>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-3 col-sm-12" id="rehersal">
+                        <div id="rehersal">
+                            <p class="rehersalAddress detailHeader">Honeyfund</p>
+                            <a class="rehersalClick detailClick">Click here to gift</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12" id="cedarHistory">
+                        <p class="detailText">Travel has been a big (and fulfilling) part of our lives.
+                        We often spend hours daydreaming about where we should go next. For our honeymoon,
+                        we will be spending a week in Venice, Italy to experience the food and culture.
+                        Afterwards, we will fly to the Maldives for a week of relaxation and fun in the sun.
+                        So, please enjoy browsing our wish list, where you can contribute to our dream honeymoon!</p>
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="slide" id="slide14" data-slide='14' data-stellar-background-ratio="0">
+            <div class="container-fluid" id="container14">
+                <br>
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner" role="listbox">
+                    <div class="item active carouselItem">
+                      <img src="img/ImagesforCarousel/018_2015_ROGER_MCKLINLEY_ENGAGEMENT -002.jpg" alt="Chania">
+                    </div>
+              
+                    <div class="item carouselItem">
+                      <img src="img/ImagesforCarousel/018_2015_ROGER_MCKLINLEY_ENGAGEMENT -017.jpg" alt="Chania">
+                    </div>
+                    <div class="item carouselItem">
+                      <img src="img/ImagesforCarousel/018_2015_ROGER_MCKLINLEY_ENGAGEMENT -024.jpg" alt="Chania">
+                    </div>
+                    <div class="item carouselItem">
+                      <img src="img/ImagesforCarousel/018_2015_ROGER_MCKLINLEY_ENGAGEMENT -035.jpg" alt="Chania">
+                    </div>
+                    <div class="item carouselItem">
+                      <img src="img/ImagesforCarousel/018_2015_ROGER_MCKLINLEY_ENGAGEMENT -056.jpg" alt="Chania">
+                    </div>
+                    <div class="item carouselItem">
+                      <img src="img/ImagesforCarousel/018_2015_ROGER_MCKLINLEY_ENGAGEMENT -059.jpg" alt="Chania">
+                    </div>
+                    <div class="item carouselItem">
+                      <img src="img/ImagesforCarousel/018_2015_ROGER_MCKLINLEY_ENGAGEMENT -063.jpg" alt="Chania">
+                    </div>
+                    <div class="item carouselItem">
+                      <img src="img/ImagesforCarousel/018_2015_ROGER_MCKLINLEY_ENGAGEMENT -070.jpg" alt="Chania">
+                    </div>
+                    <div class="item carouselItem">
+                      <img src="img/ImagesforCarousel/018_2015_ROGER_MCKLINLEY_ENGAGEMENT -080.jpg" alt="Chania">
+                    </div>
+                    <div class="item carouselItem">
+                      <img src="img/ImagesforCarousel/018_2015_ROGER_MCKLINLEY_ENGAGEMENT -108.jpg" alt="Chania">
+                    </div>
+                    <div class="item carouselItem">
+                      <img src="img/ImagesforCarousel/018_2015_ROGER_MCKLINLEY_ENGAGEMENT -113.jpg" alt="Chania">
+                    </div>
+                    <div class="item carouselItem">
+                      <img src="img/ImagesforCarousel/018_2015_ROGER_MCKLINLEY_ENGAGEMENT -114.jpg" alt="Chania">
+                    </div>
+                    <div class="item carouselItem">
+                      <img src="img/ImagesforCarousel/018_2015_ROGER_MCKLINLEY_ENGAGEMENT -116.jpg" alt="Chania">
+                    </div>
+                    <div class="item carouselItem">
+                      <img src="img/ImagesforCarousel/018_2015_ROGER_MCKLINLEY_ENGAGEMENT -117.jpg" alt="Chania">
+                    </div>
+                    <div class="item carouselItem">
+                      <img src="img/ImagesforCarousel/018_2015_ROGER_MCKLINLEY_ENGAGEMENT -154.jpg" alt="Chania">
+                    </div>
+                    <div class="item carouselItem">
+                      <img src="img/ImagesforCarousel/018_2015_ROGER_MCKLINLEY_ENGAGEMENT -157.jpg" alt="Chania">
+                    </div>
+                    <div class="item carouselItem">
+                      <img src="img/ImagesforCarousel/018_2015_ROGER_MCKLINLEY_ENGAGEMENT -167.jpg" alt="Chania">
+                    </div>
+                    <div class="item carouselItem">
+                      <img src="img/ImagesforCarousel/018_2015_ROGER_MCKLINLEY_ENGAGEMENT -176.jpg" alt="Chania">
+                    </div>
+                    <div class="item carouselItem">
+                      <img src="img/ImagesforCarousel/018_2015_ROGER_MCKLINLEY_ENGAGEMENT -196.jpg" alt="Chania">
+                    </div>
+                    <div class="item carouselItem">
+                      <img src="img/ImagesforCarousel/018_2015_ROGER_MCKLINLEY_ENGAGEMENT -208.jpg" alt="Chania">
+                    </div>
+                    <div class="item carouselItem">
+                      <img src="img/ImagesforCarousel/018_2015_ROGER_MCKLINLEY_ENGAGEMENT -246.jpg" alt="Chania">
+                    </div>
+                    <div class="item carouselItem">
+                      <img src="img/ImagesforCarousel/018_2015_ROGER_MCKLINLEY_ENGAGEMENT -253.jpg" alt="Chania">
+                    </div>
+                    <div class="item carouselItem">
+                      <img src="img/ImagesforCarousel/018_2015_ROGER_MCKLINLEY_ENGAGEMENT -262.jpg" alt="Chania">
+                    </div>
+                    <div class="item carouselItem">
+                      <img src="img/ImagesforCarousel/018_2015_ROGER_MCKLINLEY_ENGAGEMENT -266.jpg" alt="Chania">
+                    </div>
+                    <div class="item carouselItem">
+                      <img src="img/ImagesforCarousel/018_2015_ROGER_MCKLINLEY_ENGAGEMENT -273.jpg" alt="Chania">
+                    </div>
+                    <div class="item carouselItem">
+                      <img src="img/ImagesforCarousel/018_2015_ROGER_MCKLINLEY_ENGAGEMENT -333.jpg" alt="Chania">
+                    </div>
+                    <div class="item carouselItem">
+                      <img src="img/ImagesforCarousel/018_2015_ROGER_MCKLINLEY_ENGAGEMENT -342.jpg" alt="Chania">
+                    </div>
+                    <div class="item carouselItem">
+                      <img src="img/ImagesforCarousel/018_2015_ROGER_MCKLINLEY_ENGAGEMENT -365.jpg" alt="Chania">
+                    </div>
+                    <div class="item carouselItem">
+                      <img src="img/ImagesforCarousel/018_2015_ROGER_MCKLINLEY_ENGAGEMENT -373.jpg" alt="Chania">
+                    </div>
+                    <div class="item carouselItem">
+                      <img src="img/ImagesforCarousel/018_2015_ROGER_MCKLINLEY_ENGAGEMENT -381.jpg" alt="Chania">
+                    </div>
+                    <div class="item carouselItem">
+                      <img src="img/ImagesforCarousel/018_2015_ROGER_MCKLINLEY_ENGAGEMENT -394.jpg" alt="Chania">
+                    </div>
+                  
+
+                  </div>
+                   <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+            </div>
+            <div id="credits"><p>Photographs by Ilene Squires. <a>CLICK HERE TO PURCHASE</a> Username:xxx, Password: xxx</p></div>
+        </div>
+        
+         <div class="slide" id="slide15" data-slide='15' data-stellar-background-ratio="0">
+            <div class="container" id="container15">
+               <iframe id="RSVPifyIFrame" scrolling="no" allowtransparency="true" src="http://andrewandangelica.app.rsvpify.com/?embed=1" frameborder="0"></iframe>        <!--end -->
+            </div>
+            
+        </div>
+        <!--end -->
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     </body>
