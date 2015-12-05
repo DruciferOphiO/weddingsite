@@ -1,0 +1,551 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0; }
+  //fonts
+  @font-face {
+    font-family: Gabriola;
+    src: url("../fonts/Gabriola.ttf");
+}
+
+  @font-face {
+    font-family: UpperEastSide;
+    src: url("../fonts/UpperEastSide.ttf");
+}
+
+  @font-face {
+    font-family: Ballpark;
+    src: url("../fonts/BALLW___.TTF");
+}
+
+  @font-face {
+    font-family: Centaur;
+    src: url("../fonts/CENTAUR.TTF");
+}
+
+$bodyfont: Centaur, Georgia, Times, serif;
+$linkfont: Helvetica, Arial, san-serif;
+
+//------------------NAVIGATION-----------------
+.navigation {
+  padding: 0;
+  display: block;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  z-index: 997;
+  width: 100%;
+  height: auto;
+
+  
+    ul {
+      position: relative;
+      list-style-type: none;
+      margin: 8px 0 0 0;
+      padding: 0;
+      overflow: hidden;
+      z-index: 999;
+    }
+    
+    li {
+      display: inline;
+      padding: 5px 5px;
+      width: 11%;
+      float: left;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+      
+    li:nth-child(4) {
+      width: 17%;
+    }
+      
+    a {
+          color: #9B845D;
+          font-family: UpperEastSide;
+          font-size: 16px;
+          text-decoration: none;
+          letter-spacing: 1.6px;
+          
+          &:hover{
+              content: "";
+              border-bottom: 1px solid #9B845D;
+          }
+          &:active {
+              content: "";
+              border-bottom: 1px solid #9B845D;
+          }
+          &:visited{
+              text-decoration: none;
+              color: #9B845D;
+          }
+      }
+      
+
+        
+      img {
+          width:100%
+      }
+      
+    }
+    
+  .mobileNavbar{
+    position: fixed;
+    width: 100%;
+  }
+  .main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  
+  .slide{
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 0px;
+  }
+  
+    #slide1{
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  
+  @media (min-width:320px) and (max-width:599px) {
+    #slide1{
+      background-image: url("../img/mobileBackground.jpg");
+    }
+  }
+  
+  @media (min-width:600px) and (max-width:959px) {
+    #slide1{
+      background-image: url("../img/mobileBackground.jpg");
+    }
+  }
+  
+  @media (min-width:960px) and (max-width:1600px) {
+    #slide1{
+      background-image: url("../img/background.jpg");
+    }
+  }
+  
+  #slide2{
+    background-image: url("../img/halftone.png");
+    background-repeat: repeat;
+    vertical-align:middle;
+    height:140%
+  }
+  
+
+  
+    #slide3, #slide3mobile{
+    background-image: url("../img/cedarhall.jpg");
+   background-size: contain;
+    background-repeat: no-repeat;
+    background-position:left top;
+    height: 30%;
+  }
+  
+    #slide4{
+    background-image: url("../img/halftone.png");
+    background-repeat: repeat;
+    height:50%;
+    padding: 0px;
+  }
+      #slide5, #slide5mobile{
+    background-image: url("../img/hotels.jpg");
+   background-size: contain;
+    background-repeat: no-repeat;
+    background-position:left top;
+    height: 30%;
+  }
+      #slide6{
+    background-image: url("../img/halftone.png");
+    background-repeat: repeat;
+    height:65%;
+    padding: 0px;
+  }
+      #slide7{
+    background-image: url("../img/beale.jpeg");
+   background-size: contain;
+    background-repeat: no-repeat;
+    background-position:left top;
+    height: 30%;
+  }
+      #slide8{
+    background-image: url("../img/halftone.png");
+    background-repeat: repeat;
+    height:45%;
+    padding: 0px;
+  }
+  
+   #slide9{
+   background-image: url("../img/halftone.png");
+    background-repeat: repeat;
+    height: auto;
+    display: inline-block;
+    padding: 0px;
+  }
+  
+        #slide10{
+    background-image: url("../img/HatchMyHouse.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:left top;
+    margin-top: -5px;
+    height: 30%;
+  }
+  
+        #slide11{
+    background-image: url("../img/halftone.png");
+    background-repeat: repeat;
+    height:50%;
+    padding: 0px;
+  }
+  
+  #slide12{
+    background-image: url("../img/honeymoonregistry.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:left top;
+    height: 30%;
+  }
+  
+  #slide13{
+    background-image: url("../img/halftone.png");
+    background-repeat: repeat;
+    height:45%;
+    padding: 0px;
+  }
+  
+  #slide14{
+    background-image: url("../img/halftone.png");
+    background-repeat: repeat;
+    height:150%;
+    padding: 0px;
+  }
+  
+  #slide15{
+    background-image: url("../img/halftone.png");
+    background-repeat: repeat;
+    height:120%;
+    padding: 0px;
+  }
+  
+
+  .navigation-background {
+    display: block;
+    top:0;
+    width: 80%;
+  }
+        
+  .monogram {
+    display: inline;
+    position: absolute;
+    left: 46.28%;
+    top: -5.27%;
+    width: 7.5%;
+    z-index: 998;
+  }
+  
+  #monogram{
+    height: auto;
+    width:100%;
+    cursor: pointer;
+  }
+  
+  .white-shadow {
+    display: inline;
+    position: absolute;
+    top:-8px;
+    width: 100%;
+    opacity: .8;
+  }
+  
+  #shadow {
+    width:100%;
+  }
+  
+  #date{
+    position: relative;
+    left:0 !important;
+    top: 45px;
+    z-index: 10000;
+    font-family: Ballpark;
+    p {
+      font-size: 29px;
+      color: #9B845D;
+      margin-top: 15px;
+        .numbers {
+          letter-spacing: 2px;
+        }
+    }
+  }
+  
+  .leftside{
+    position: relative;
+    left:150px;
+  }
+  
+  .rightside{
+    position: relative;
+    left:86px;
+  }
+  
+  .lovetext{
+    position: absolute;
+    z-index: 100;
+    opacity: 0;
+    display:inline-block;
+    text-align: center;
+    vertical-align:middle;
+    height: auto;
+    width:70%;
+    left: 15%;
+    top: 11%;
+    p{
+      height: 80%;
+      width:100%;
+      position:absolute;
+      display:table-cell;
+      display:inline-block;
+      text-align: center;
+      vertical-align:middle;
+      left: 0;
+      text-align: center;
+      font-size: 18px;
+      font-family: $bodyfont;
+      line-height: 26px;
+        .bignames {
+          display: block;
+          font-family: $bodyfont;
+          font-size: 27px;
+          color: #9B845D;
+          text-transform: uppercase;
+          text-align: center;
+          margin-top: 20px;
+        }
+    }
+  }
+  
+  .imageContainer{
+    position: absolute;
+    width: 95%;
+  }
+  .framedPic {
+    width: 100%;
+    height: auto;
+  }
+   #container2{
+    height:100%
+  }
+  
+   #row2{
+    height: 100%;
+  }
+  
+  #row3{
+    width: 100%;
+  }
+  
+  #container3{
+    width: 100%;
+    padding: 0px;
+  }
+  
+  .halfPage {
+    height: 100%;
+  }
+  
+  #venueImageContainer{
+    padding: 0px;
+  }
+  
+  #venueImage{
+    max-width:100%;
+    max-height:100%;    
+  }
+  
+  #theWedding{
+    left:0 !important;
+    opacity: 0;
+    font-family: Ballpark;
+    font-size: 32px;
+    color: #9B845D;
+  }
+  
+  #leftHalf{
+    top: 25px;
+    left: -2px;
+    display:inline-block;
+    vertical-align:middle;
+  }
+  
+  #rightHalf{
+    top: 28px;
+    right: -2px;
+    display:inline-block;
+    vertical-align:middle;
+      .imageContainer {
+        .framedPic {
+          width: 98.75%
+        }
+      }
+  }
+  
+   .detailkicker {
+    font-size: 17px;
+    font-family: $bodyfont;
+    text-transform: uppercase;
+    color: #9B845D;
+    margin-bottom: 2px;
+  }
+  
+  .detailHeader {
+    font-size: 30px;
+    color: #9B845D;
+    font-family: $bodyfont;
+    margin-bottom: 2px;
+  }
+  
+  .detailsecond {
+    display: block;
+    font-size: 23px;
+    color: #9B845D;
+    font-family: $bodyfont;
+    margin-top:-4px;
+    
+  }
+  
+  .detailClick {
+    font-size: 13px;
+    color: #B76E79;
+    font-family: $linkfont;
+    font-weight: 100;
+      &:hover {
+        border-bottom: #B76E79;
+        color: #B76E79;
+      }
+  }
+  
+  #hotelsContainer {
+    .hotel {  
+      margin-bottom: -10px;
+        .hotelname.detailHeader {
+          margin-bottom: -5px;
+        }
+    }
+  }
+  
+   .detailText {
+    font-size: 18px;
+    font-family: $bodyfont;
+  }
+  
+    
+ 
+  #container9{
+    height: auto;
+    margin-top: 200px;
+  }
+  
+  .picNtextContainer{
+    display: inline-block;
+    float: left;
+    position: relative;
+    margin: 0px;
+  }
+  
+  .partText{
+      position: absolute;
+    z-index: 100;
+    opacity: 0;
+    display:inline-block;
+    text-align: center;
+    vertical-align:middle;
+    height: 100%;
+    width:100%;
+    top:0;
+    p{
+      height: 80%;
+      width:100%;
+      position:absolute;
+      display:table-cell;
+      display:inline-block;
+      text-align: center;
+      vertical-align:middle;
+      left: 0;
+      text-align: center;
+      line-height: 100px; 
+    }
+  }
+  .partyPic{
+    width: auto;
+  }
+
+  .framedPartyPic{
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .grid-item {
+    width: 100%;
+    height: auto;
+    }
+    
+    #myCarousel{
+      width: 90%;
+      margin: auto;
+    }
+    
+.carousel-control.left, .carousel-control.right {
+  background: none !important;
+  outline: 0;
+  margin: auto;
+ }
+ 
+.item {
+  margin: auto;
+  img{
+    margin: auto;
+  }
+}
+
+#credits{
+  margin: auto;
+  p{
+    text-align: center;
+  }
+}
+
+.carouselItem{
+  height: 100%;
+  width: 100%;
+    img{
+      width: 100%;
+      height: auto;
+  }
+}
+#container15{
+    height: 100%;
+    padding: 0px;
+  }
+  
+#RSVPifyIFrame{
+  width:100%;
+  height:80%;
+  border:none;
+}
+
+ @media only screen and (min-width : 480px) {
+
+    }
+
+
+  

@@ -1,0 +1,133 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd"
+    >
+<html lang="en">
+<head>
+    <title>A+A May 5th 2016</title>
+</head>
+<body>
+    <div id="body">
+        <div id="mainContainer">
+            <div>
+                <div id="leftSide">
+                    <div id="messageContainer">
+                        <img id="logo" src="Monogram_bronze.png"><br>
+                        <p id="title1" class="leftText mainText">wedding website for</p><br>
+                        <p id="title2" class="leftText mainText">andrew & angelica</p><br>
+                        <p id="title3" class="leftText mainText">coming</p><img id="weddingIcon" src="bridegroom2.png"><br>
+                        <p id="title4" class="leftText mainText">soon</p><br>
+                    </div>
+                    <div id="leftFooterContainer">
+                        <p id="footer1" class="leftText footerText">Meanwhile, please send us</p><br>
+                        <p id="footer2" class="leftText footerText">your advice via Mad Lib!</p><br>
+                    </div>
+                </div>
+                <div id="rightSide">
+                    <div id="madlibContainer">
+                        <form id="mainForum" style="display: inline">
+                            <p class="mainText">My name is </p>
+                            <span id="firstClue" class="clueAndInput"> <input class="input" type="text" name="firstInput"> <span class="clue">your name</span></span>
+                            <p class="mainText">and I'm so </p>
+                            <span id="secondClue" class="clueAndInput"> <input class="input" type="text" name="secondInput"> <span class="clue">adjective</span></span>
+                            <p class="mainText">that ya'll are tying the knot! Dont forget to </p>
+                            <span id="thirdClue" class="clueAndInput"> <input class="input" type="text" name="thirdInput"> <span class="clue">verb</span></span>
+                            <p class="mainText">and never </p>
+                            <span id="fourthClue" class="clueAndInput"> <input class="input" type="text" name="fourthInput"> <span class="clue">verb</span></span>
+                            <p class="mainText">. The secret to lifelong marital bliss is</p>
+                            <span id="fifthClue" class="clueAndInput"> <input class="input" type="text" name="fifthInput"> <span class="clue">adjective</span></span>
+                            <p class="mainText">  </p>
+                            <span id="sixthClue" class="clueAndInput"> <input class="input" type="text" name="sixthInput"> <span class="clue">verb</span></span>
+                            <p class="mainText">. I wish you both health, happiness and </p>
+                            <span id="seventhClue" class="clueAndInput"> <input class="input" type="text" name="seventhInput"> <span class="clue">noun</span></span>
+                            
+                            <input type="submit" value="Submit" onClick="create(this.form)">
+                          </form>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+</body>
+<style>
+    
+    #body{
+        color: #fff;
+        background-color: #000;
+    }
+    .input{
+        color: #fff;
+        outline-width: 0;
+        background-color: transparent; 
+        border-style: solid; 
+        border-width: 0px 0px 1px 0px; 
+        border-color: #fff;
+    }
+    
+    .clue{
+        position: relative;
+        display: inline;
+        top:20px;
+        right: 80px;
+    }
+    
+    .mainText{
+        display: inline;
+        line-height: 40px;
+    }
+    
+    .clueAndInput{
+        
+        position: relative;
+        left:25px;
+    }
+</style>
+<SCRIPT LANGUAGE="JavaScript">
+
+<!-- Begin 
+function create(form) {        
+    if (areSame(form) == "no")
+    {
+    
+    storyWin = window.open("","StoryWin","toolbar=no,width=320,height=325,directories=no,status=yes,scrollbars=yes,resize=no,menubar=no");                
+    with (storyWin.document)
+    {                 
+        writeln ("<P><b> My name is" + form.firstInput.value + "and I'm so" + form.secondInput.value + "that ya'll are tying the knot! Don't forget to" + form.thirdInput.value + "and never" + form.fourthInput.value + ". The secret to lifelong martial bliss is"
+                 + form.fifthInput.value + " "+ form.sixthInput.value +". I wish you both health, happiness and"+form.seventhInput.value+"");
+        
+      }        
+   }
+}
+
+function areSame(form)
+{
+    var firstInput = form.firstInput.value;
+    var secondInput = form.secondInput.value;
+    if (firstInput == secondInput)
+    {
+        alert("they cant be the same!!!");
+        return "yes";
+    }
+    else
+    {
+        return "no";       
+    }
+    
+    var cars = ["Saab", "Volvo", "BMW"];
+    for (eachCar in cars)
+    {
+        alert(eachCar);
+    }
+    
+    
+    
+    for (var i = 0; i >cars.length; i++)
+    {
+        alert(cars[i]);
+    }
+}
+// End -->
+</SCRIPT>
+</html>
