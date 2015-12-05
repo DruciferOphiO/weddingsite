@@ -184,7 +184,7 @@ html, body {
   height: 65%;
   padding: 0px; }
 
-#slide7 {
+#slide7, #slide7mobile {
   background-image: url("../img/beale.jpeg");
   background-size: contain;
   background-repeat: no-repeat;
@@ -204,13 +204,19 @@ html, body {
   display: inline-block;
   padding: 0px; }
 
-#slide10 {
+#slide10, #slide10mobile {
   background-image: url("../img/HatchMyHouse.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: left top;
   margin-top: -5px;
   height: 30%; }
+  @media (min-width: 320px) and (max-width: 599px) {
+    #slide10, #slide10mobile {
+      height: 10%; } }
+  @media (min-width: 600px) and (max-width: 959px) {
+    #slide10, #slide10mobile {
+      height: 10%; } }
 
 #slide11 {
   background-image: url("../img/halftone.png");
@@ -218,7 +224,7 @@ html, body {
   height: 50%;
   padding: 0px; }
 
-#slide12 {
+#slide12, #container12mobile {
   background-image: url("../img/honeymoonregistry.jpg");
   background-size: contain;
   background-repeat: no-repeat;
@@ -274,7 +280,7 @@ html, body {
 #date {
   position: relative;
   left: 0 !important;
-  top: 45px;
+  top: 95px;
   z-index: 10000;
   font-family: Ballpark; }
   #date p {
