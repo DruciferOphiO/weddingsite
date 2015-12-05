@@ -129,7 +129,7 @@ jQuery(document).ready(function ($) {
      $('#partyPicText1').hover(
         function()
         {
-            $('#partyPic1').css("opacity", 0.1);
+            $('#partyPic1').css("opacity", 0.05);
             $('#partyText1').css("opacity", 1);
         },
         function()
@@ -142,7 +142,7 @@ jQuery(document).ready(function ($) {
      $('#partyPicText2').hover(
         function()
         {
-            $('#partyPic2').css("opacity", 0.1);
+            $('#partyPic2').css("opacity", 0.05);
             $('#partyText2').css("opacity", 1);
         },
         function()
@@ -155,7 +155,7 @@ jQuery(document).ready(function ($) {
      $('#partyPicText3').hover(
         function()
         {
-            $('#partyPic3').css("opacity", 0.1);
+            $('#partyPic3').css("opacity", 0.05);
             $('#partyText3').css("opacity", 1);
         },
         function()
@@ -168,7 +168,7 @@ jQuery(document).ready(function ($) {
      $('#partyPicText4').hover(
         function()
         {
-            $('#partyPic4').css("opacity", 0.1);
+            $('#partyPic4').css("opacity", 0.05);
             $('#partyText4').css("opacity", 1);
         },
         function()
@@ -181,7 +181,7 @@ jQuery(document).ready(function ($) {
      $('#partyPicText5').hover(
         function()
         {
-            $('#partyPic5').css("opacity", 0.1);
+            $('#partyPic5').css("opacity", 0.05);
             $('#partyText5').css("opacity", 1);
         },
         function()
@@ -194,7 +194,7 @@ jQuery(document).ready(function ($) {
      $('#partyPicText6').hover(
         function()
         {
-            $('#partyPic6').css("opacity", 0.1);
+            $('#partyPic6').css("opacity", 0.05);
             $('#partyText6').css("opacity", 1);
         },
         function()
@@ -207,7 +207,7 @@ jQuery(document).ready(function ($) {
      $('#partyPicText7').hover(
         function()
         {
-            $('#partyPic7').css("opacity", 0.1);
+            $('#partyPic7').css("opacity", 0.05);
             $('#partyText7').css("opacity", 1);
         },
         function()
@@ -220,7 +220,7 @@ jQuery(document).ready(function ($) {
      $('#partyPicText8').hover(
         function()
         {
-            $('#partyPic8').css("opacity", 0.1);
+            $('#partyPic8').css("opacity", 0.05);
             $('#partyText8').css("opacity", 1);
         },
         function()
@@ -233,7 +233,7 @@ jQuery(document).ready(function ($) {
      $('#partyPicText9').hover(
         function()
         {
-            $('#partyPic9').css("opacity", 0.1);
+            $('#partyPic9').css("opacity", 0.05);
             $('#partyText9').css("opacity", 1);
         },
         function()
@@ -246,7 +246,7 @@ jQuery(document).ready(function ($) {
      $('#partyPicText10').hover(
         function()
         {
-            $('#partyPic10').css("opacity", 0.1);
+            $('#partyPic10').css("opacity", 0.05);
             $('#partyText10').css("opacity", 1);
         },
         function()

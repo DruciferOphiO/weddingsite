@@ -173,43 +173,16 @@ $linkfont: Helvetica, Arial, san-serif;
   }
   
     #slide1{
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-    background-repeat: no-repeat;
-  }
-  
-  @media (min-width:320px) and (max-width:599px) {
-    #slide1{
+      -webkit-background-size: 100%;
+      -moz-background-size: 100%;
+      -o-background-size: 100%;
+      background-size: 100%;
+      background-repeat: no-repeat;
       background-image: url("../img/mobileBackground.jpg");
+      @media (min-width:992px) {
+        background-image: url("../img/background.jpg");
+      }
     }
-  }
-  
-  @media (min-width:600px) and (max-width:959px) {
-    #slide1{
-      background-image: url("../img/mobileBackground.jpg");
-    }
-    .navbar-inverse .container .navbar-toggle {
-      margin-top: -60px;
-      padding: 14px 15px;
-    }
-    .mobileLogo {
-      font-size: 25px;
-      left: 99px;
-      top: 24px;
-    }
-    .monogram-mobile #monogram-2 {
-      width: 80px;
-      height: auto;
-    }
-  }
-  
-  @media (min-width:960px) and (max-width:1600px) {
-    #slide1{
-      background-image: url("../img/background.jpg");
-    }
-  }
   
   #slide2{
     background-image: url("../img/halftone.png");
@@ -370,6 +343,9 @@ $linkfont: Helvetica, Arial, san-serif;
           letter-spacing: 2px;
         }
     }
+    &:first-child p {
+        color: #fff;
+    }
   }
   
   .leftside{
@@ -383,25 +359,18 @@ $linkfont: Helvetica, Arial, san-serif;
   }
   
   .lovetext{
-    position: absolute;
     z-index: 100;
-    opacity: 0;
-    display:inline-block;
+    opacity: 1;
+    display: block;
     text-align: center;
-    vertical-align:middle;
     height: auto;
-    width:70%;
-    left: 15%;
-    top: 11%;
+    width: 97%;
+    margin-right: auto;
+    margin-left: auto;
     p{
-      height: 80%;
-      width:100%;
-      position:absolute;
-      display:table-cell;
-      display:inline-block;
-      text-align: center;
-      vertical-align:middle;
-      left: 0;
+      height: auto;
+      width: 100%;
+      display: block;
       text-align: center;
       font-size: 18px;
       font-family: $bodyfont;
@@ -413,14 +382,13 @@ $linkfont: Helvetica, Arial, san-serif;
           color: #9B845D;
           text-transform: uppercase;
           text-align: center;
-          margin-top: 20px;
+          margin-bottom: 15px;
         }
     }
   }
   
   .imageContainer{
-    position: absolute;
-    width: 95%;
+    width: 100%;
   }
   .framedPic {
     width: 100%;
@@ -466,9 +434,8 @@ $linkfont: Helvetica, Arial, san-serif;
   
   #leftHalf{
     top: 25px;
-    left: -2px;
-    display:inline-block;
-    vertical-align:middle;
+    left: 0px;
+    display:block;
   }
   
   #rightHalf{
@@ -531,6 +498,10 @@ $linkfont: Helvetica, Arial, san-serif;
     font-size: 18px;
     font-family: $bodyfont;
   }
+
+  .rehersalAddress.detailHeader {
+    margin-bottom: -5px;
+  }
   
     
  
@@ -547,7 +518,7 @@ $linkfont: Helvetica, Arial, san-serif;
   }
   
   .partText{
-      position: absolute;
+    position: absolute;
     z-index: 100;
     opacity: 0;
     display:inline-block;
@@ -557,7 +528,7 @@ $linkfont: Helvetica, Arial, san-serif;
     width:100%;
     top:0;
     p{
-      height: 80%;
+      height: 30%;
       width:100%;
       position:absolute;
       display:table-cell;
@@ -565,8 +536,19 @@ $linkfont: Helvetica, Arial, san-serif;
       text-align: center;
       vertical-align:middle;
       left: 0;
+      top: 35%;
       text-align: center;
-      line-height: 100px; 
+      line-height: 30px;
+      font-family: $bodyfont;
+      font-size: 22px; 
+      .partynames {
+        display: block;
+        font-family: $bodyfont;
+        font-size: 27px;
+        color: #9B845D;
+        text-transform: uppercase;
+        text-align: center;
+      }
     }
   }
   .partyPic{
@@ -627,5 +609,62 @@ $linkfont: Helvetica, Arial, san-serif;
   border:none;
 }
 
-
+@media (min-width:769px) and (max-width:991px) {
+    .navbar-inverse .container .navbar-toggle {
+      margin-top: -60px;
+      padding: 14px 15px;
+    }
+    .mobileLogo {
+      font-size: 25px;
+      left: 99px;
+      top: 24px;
+    }
+    .monogram-mobile #monogram-2 {
+      width: 80px;
+      height: auto;
+    }
+    #date:first-child p {
+      color: #9B845D;
+    }
+    #leftHalf{
+      top: 25px;
+      left: -2px;
+      display:inline-block;
+      vertical-align:middle;
+    }
+    .imageContainer{
+    position: absolute;
+    width: 95%;
+    }
+    .lovetext{
+    position: absolute;
+    opacity: 0;
+    display:inline-block;
+    vertical-align:middle;
+    height: auto;
+    width:70%;
+    left: 15%;
+    top: 11%;
+      p{
+        height: 80%;
+        width:100%;
+        position:absolute;
+        display:table-cell;
+        display:inline-block;
+        vertical-align:middle;
+        left: 0;
+      }
+    }
+  }
   
+  @media (min-width:992px) and (max-width:1199px) {
+    #slide1{
+      background-image: url("../img/background.jpg");
+    }
+  }
+
+  @media (min-width:1200px) and (max-width:1600px) {
+    #slide1{
+      background-image: url("../img/background.jpg");
+    }
+  }

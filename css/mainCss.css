@@ -128,30 +128,12 @@ html, body {
   -moz-background-size: 100%;
   -o-background-size: 100%;
   background-size: 100%;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-image: url("../img/mobileBackground.jpg"); }
+  @media (min-width: 992px) {
+    #slide1 {
+      background-image: url("../img/background.jpg"); } }
 
-@media (min-width: 320px) and (max-width: 599px) {
-  #slide1 {
-    background-image: url("../img/mobileBackground.jpg"); } }
-@media (min-width: 600px) and (max-width: 959px) {
-  #slide1 {
-    background-image: url("../img/mobileBackground.jpg"); }
-
-  .navbar-inverse .container .navbar-toggle {
-    margin-top: -60px;
-    padding: 14px 15px; }
-
-  .mobileLogo {
-    font-size: 25px;
-    left: 99px;
-    top: 24px; }
-
-  .monogram-mobile #monogram-2 {
-    width: 80px;
-    height: auto; } }
-@media (min-width: 960px) and (max-width: 1600px) {
-  #slide1 {
-    background-image: url("../img/background.jpg"); } }
 #slide2 {
   background-image: url("../img/halftone.png");
   background-repeat: repeat;
@@ -289,6 +271,8 @@ html, body {
     margin-top: 15px; }
     #date p .numbers {
       letter-spacing: 2px; }
+  #date:first-child p {
+    color: #fff; }
 
 .leftside {
   position: relative;
@@ -299,25 +283,18 @@ html, body {
   left: 86px; }
 
 .lovetext {
-  position: absolute;
   z-index: 100;
-  opacity: 0;
-  display: inline-block;
+  opacity: 1;
+  display: block;
   text-align: center;
-  vertical-align: middle;
   height: auto;
-  width: 70%;
-  left: 15%;
-  top: 11%; }
+  width: 97%;
+  margin-right: auto;
+  margin-left: auto; }
   .lovetext p {
-    height: 80%;
+    height: auto;
     width: 100%;
-    position: absolute;
-    display: table-cell;
-    display: inline-block;
-    text-align: center;
-    vertical-align: middle;
-    left: 0;
+    display: block;
     text-align: center;
     font-size: 18px;
     font-family: Centaur, Georgia, Times, serif;
@@ -329,11 +306,10 @@ html, body {
       color: #9B845D;
       text-transform: uppercase;
       text-align: center;
-      margin-top: 20px; }
+      margin-bottom: 15px; }
 
 .imageContainer {
-  position: absolute;
-  width: 95%; }
+  width: 100%; }
 
 .framedPic {
   width: 100%;
@@ -371,9 +347,8 @@ html, body {
 
 #leftHalf {
   top: 25px;
-  left: -2px;
-  display: inline-block;
-  vertical-align: middle; }
+  left: 0px;
+  display: block; }
 
 #rightHalf {
   top: 28px;
@@ -421,6 +396,9 @@ html, body {
   font-size: 18px;
   font-family: Centaur, Georgia, Times, serif; }
 
+.rehersalAddress.detailHeader {
+  margin-bottom: -5px; }
+
 #container9 {
   height: auto;
   margin-top: 200px; }
@@ -442,7 +420,7 @@ html, body {
   width: 100%;
   top: 0; }
   .partText p {
-    height: 80%;
+    height: 30%;
     width: 100%;
     position: absolute;
     display: table-cell;
@@ -450,8 +428,18 @@ html, body {
     text-align: center;
     vertical-align: middle;
     left: 0;
+    top: 35%;
     text-align: center;
-    line-height: 100px; }
+    line-height: 30px;
+    font-family: Centaur, Georgia, Times, serif;
+    font-size: 22px; }
+    .partText p .partynames {
+      display: block;
+      font-family: Centaur, Georgia, Times, serif;
+      font-size: 27px;
+      color: #9B845D;
+      text-transform: uppercase;
+      text-align: center; }
 
 .partyPic {
   width: auto; }
@@ -499,5 +487,56 @@ html, body {
   width: 100%;
   height: 80%;
   border: none; }
+
+@media (min-width: 769px) and (max-width: 991px) {
+  .navbar-inverse .container .navbar-toggle {
+    margin-top: -60px;
+    padding: 14px 15px; }
+
+  .mobileLogo {
+    font-size: 25px;
+    left: 99px;
+    top: 24px; }
+
+  .monogram-mobile #monogram-2 {
+    width: 80px;
+    height: auto; }
+
+  #date:first-child p {
+    color: #9B845D; }
+
+  #leftHalf {
+    top: 25px;
+    left: -2px;
+    display: inline-block;
+    vertical-align: middle; }
+
+  .imageContainer {
+    position: absolute;
+    width: 95%; }
+
+  .lovetext {
+    position: absolute;
+    opacity: 0;
+    display: inline-block;
+    vertical-align: middle;
+    height: auto;
+    width: 70%;
+    left: 15%;
+    top: 11%; }
+    .lovetext p {
+      height: 80%;
+      width: 100%;
+      position: absolute;
+      display: table-cell;
+      display: inline-block;
+      vertical-align: middle;
+      left: 0; } }
+@media (min-width: 992px) and (max-width: 1199px) {
+  #slide1 {
+    background-image: url("../img/background.jpg"); } }
+@media (min-width: 1200px) and (max-width: 1600px) {
+  #slide1 {
+    background-image: url("../img/background.jpg"); } }
 
 /*# sourceMappingURL=mainCss.css.map */
