@@ -45,7 +45,7 @@ jQuery(document).ready(function ($) {
         }
         
         if (dataslide == 14) {
-            offset = 5;
+            offset = -25;
         }
         
         if (dataslide == 15) {

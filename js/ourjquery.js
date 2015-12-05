@@ -7,7 +7,7 @@ jQuery(document).ready(function ($) {
          thirdPage = $('#container3'),
          fourthPage = $('#container4'),
          partyPage = $('#container9'),
-         registryPage = $('#container10'),
+         registryPage = $('#container11'),
          galleryPage = $('#container14'),
          rsvpPage = $('#container15'),
          weddingTitle = $('#theWedding'),
@@ -31,53 +31,105 @@ jQuery(document).ready(function ($) {
             
          navbackground.css("opacity", 1);
         }
-        
-        var titleHeight = $(window).scrollTop() +160;
-        var delayHeight = $(window).scrollTop()+300;
-         if (titleHeight < secondPage.offset().top)
-         {
-             textCenter.text("May 6, 2016");
-             textCenter.fadeIn(700);
-         }
-         else if (titleHeight >= secondPage.offset().top && delayHeight < thirdPage.offset().top)
-         {
-             textCenter.text("Love Story");
-             textCenter.fadeIn(700);
-             
-         }
-         else if (height+400 >= thirdPage.offset().top && height < fourthPage.offset().top)
-         {
-            textCenter.text("The Wedding"); 
-         }
-         else if (height+180 >= thirdPage.offset().top && height-50 < fourthPage.offset().top)
-         {
-            textCenter.fadeOut(700);
-         }
 
-         else if ((height >= partyPage.offset().top-350) && height < partyPage.offset().top-150)
-         {
-            textCenter.text("The Party");
-            textCenter.fadeIn(700);
-         }
-         else if (height >= registryPage.offset().top-450 && height < registryPage.offset().top-200)
-         {
-            textCenter.text("The Registry");
-            textCenter.fadeIn(700);
-         }
-         else if (height >= galleryPage.offset().top-200 && height < galleryPage.offset().top+5)
-         {
-            textCenter.text("Our Gallery");
-            textCenter.fadeIn(700);
-         }
-         else if (height >= rsvpPage.offset().top-320 && height < rsvpPage.offset().top-130)
-         {
-            textCenter.text("RSVP");
-            textCenter.fadeIn(700);
-         }
-         else
-         {
-            textCenter.fadeOut(700);
-         }
+        if ($( window ).width() < 599) {
+            var titleHeight = $(window).scrollTop() +160;
+            var delayHeight = $(window).scrollTop()+300;
+            var fadeoutTime = 700;
+            textCenter.text("at "+height+" vs = "+$('#slide1').height());
+             if (height < $('#slide1').height())
+             {
+                
+                // textCenter.text("May 6, 2016");
+                 textCenter.fadeIn(fadeoutTime);
+             }
+             else if (titleHeight >= secondPage.offset().top && delayHeight < thirdPage.offset().top)
+             {
+                 textCenter.text("Love Story");
+                 textCenter.fadeIn(fadeoutTime);
+                 
+             }
+             else if (height+140 < thirdPage.offset().top && height+400 >= thirdPage.offset().top)
+             {
+                textCenter.text("The Wedding");
+                textCenter.fadeIn(fadeoutTime);
+             }
+    
+             else if (height+150 < partyPage.offset().top && height+400 >= partyPage.offset().top)
+             {
+                textCenter.text("The Party");
+                textCenter.fadeIn(fadeoutTime);
+             }
+        
+             else if (height+500 > registryPage.offset().top && height+350 < registryPage.offset().top)
+             {
+                textCenter.text("The Registry");
+                textCenter.fadeIn(fadeoutTime);
+             }
+             else if (height >= galleryPage.offset().top-200 && height < galleryPage.offset().top-5)
+             {
+                textCenter.text("Our Gallery");
+                textCenter.fadeIn(fadeoutTime);
+             }
+             else if (height >= rsvpPage.offset().top-320 && height < rsvpPage.offset().top-130)
+             {
+                textCenter.text("RSVP");
+                textCenter.fadeIn(fadeoutTime);
+             }
+             else
+             {
+                textCenter.fadeOut(fadeoutTime);
+             }
+        }
+        
+        else {
+            var titleHeight = $(window).scrollTop() +160;
+            var delayHeight = $(window).scrollTop()+300;
+            var fadeoutTime = 700;
+             if (titleHeight < secondPage.offset().top)
+             {
+                 textCenter.text("May 6, 2016");
+                 textCenter.fadeIn(fadeoutTime);
+             }
+             else if (titleHeight >= secondPage.offset().top && delayHeight < thirdPage.offset().top)
+             {
+                 textCenter.text("Love Story");
+                 textCenter.fadeIn(fadeoutTime);
+                 
+             }
+             else if (height+140 < thirdPage.offset().top && height+400 >= thirdPage.offset().top)
+             {
+                textCenter.text("The Wedding");
+                textCenter.fadeIn(fadeoutTime);
+             }
+        
+             else if (height+150 < partyPage.offset().top && height+400 >= partyPage.offset().top)
+             {
+                textCenter.text("The Party");
+                textCenter.fadeIn(fadeoutTime);
+             }
+        
+             else if (height+500 > registryPage.offset().top && height+350 < registryPage.offset().top)
+             {
+                textCenter.text("The Registry");
+                textCenter.fadeIn(fadeoutTime);
+             }
+             else if (height >= galleryPage.offset().top-200 && height < galleryPage.offset().top-5)
+             {
+                textCenter.text("Our Gallery");
+                textCenter.fadeIn(fadeoutTime);
+             }
+             else if (height >= rsvpPage.offset().top-320 && height < rsvpPage.offset().top-130)
+             {
+                textCenter.text("RSVP");
+                textCenter.fadeIn(fadeoutTime);
+             }
+             else
+             {
+                textCenter.fadeOut(fadeoutTime);
+             }  
+        }
+        
          
      });
      

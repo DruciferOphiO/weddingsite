@@ -123,7 +123,7 @@ html, body {
   position: relative;
   padding: 0px; }
 
-#slide1 {
+#slide1, #slide1mobile {
   -webkit-background-size: 100%;
   -moz-background-size: 100%;
   -o-background-size: 100%;
@@ -131,10 +131,10 @@ html, body {
   background-repeat: no-repeat; }
 
 @media (min-width: 320px) and (max-width: 599px) {
-  #slide1 {
+  #slide1mobile {
     background-image: url("../img/mobileBackground.jpg"); } }
 @media (min-width: 600px) and (max-width: 959px) {
-  #slide1 {
+  #slide1mobile {
     background-image: url("../img/mobileBackground.jpg"); }
 
   .navbar-inverse .container .navbar-toggle {
@@ -283,6 +283,9 @@ html, body {
   top: 95px;
   z-index: 10000;
   font-family: Ballpark; }
+  @media (min-width: 320px) and (max-width: 599px) {
+    #date {
+      top: 500px; } }
   #date p {
     font-size: 29px;
     color: #9B845D;
@@ -423,7 +426,8 @@ html, body {
 
 #container9 {
   height: auto;
-  margin-top: 200px; }
+  margin-top: 200px;
+  margin-bottom: 200px; }
 
 .picNtextContainer {
   display: inline-block;

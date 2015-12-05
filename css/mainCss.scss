@@ -172,7 +172,7 @@ $linkfont: Helvetica, Arial, san-serif;
     padding: 0px;
   }
   
-    #slide1{
+    #slide1,#slide1mobile{
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -181,13 +181,13 @@ $linkfont: Helvetica, Arial, san-serif;
   }
   
   @media (min-width:320px) and (max-width:599px) {
-    #slide1{
+    #slide1mobile{
       background-image: url("../img/mobileBackground.jpg");
     }
   }
   
   @media (min-width:600px) and (max-width:959px) {
-    #slide1{
+    #slide1mobile{
       background-image: url("../img/mobileBackground.jpg");
     }
     .navbar-inverse .container .navbar-toggle {
@@ -362,6 +362,9 @@ $linkfont: Helvetica, Arial, san-serif;
     top: 95px;
     z-index: 10000;
     font-family: Ballpark;
+     @media (min-width:320px) and (max-width:599px) {
+      top: 500px;
+    }
     p {
       font-size: 29px;
       color: #9B845D;
@@ -537,6 +540,7 @@ $linkfont: Helvetica, Arial, san-serif;
   #container9{
     height: auto;
     margin-top: 200px;
+    margin-bottom: 200px;
   }
   
   .picNtextContainer{
