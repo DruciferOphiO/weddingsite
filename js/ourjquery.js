@@ -12,6 +12,11 @@ jQuery(document).ready(function ($) {
          rsvpPage = $('#container15'),
          weddingTitle = $('#theWedding'),
          navbackground = $(".white-shadow");
+    
+    if (screen.width < 600)
+    {
+        registryPage = $('#container10mobile')
+    }
 
          
      documentEl.on('scroll', function() {
@@ -54,7 +59,7 @@ jQuery(document).ready(function ($) {
             textCenter.text("The Party");
             textCenter.fadeIn(700);
          }
-         else if ((height >= registryPage.offset().top-450) && height < registryPage.offset().top-200)
+         else if (height >= registryPage.offset().top-450 && height < registryPage.offset().top-200)
          {
             textCenter.text("The Registry");
             textCenter.fadeIn(700);
@@ -93,6 +98,10 @@ jQuery(document).ready(function ($) {
         }
      );
      
+     $("p").on("taphold",function(){
+        $(this).hide();
+    });
+     
      $( "#rightHalf" ).hover(
         function()
         {
@@ -116,9 +125,6 @@ jQuery(document).ready(function ($) {
             scrollTop: $("#slide1").offset().top
         }, 2000, 'easeInOutQuint');
     });
-
-   // $("#container9").masonry();
-     
      
      $('#partyPicText1').hover(
         function()
