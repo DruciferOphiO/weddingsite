@@ -523,6 +523,10 @@ $linkfont: Helvetica, Arial, san-serif;
         color: #B76E79;
       }
   }
+
+  #directionsContainer {
+    margin-bottom: 22px;
+  }
   
   #hotelsContainer {
     margin-bottom: 30px;
@@ -643,12 +647,16 @@ $linkfont: Helvetica, Arial, san-serif;
 #container15{
     height: 100%;
     padding: 0px;
+    width: 90%
   }
   
 #RSVPifyIFrame{
   width:100%;
-  height:80%;
+  height:100%;
   border:none;
+  .form-horizontal .control-label, .form-control {
+    width: 100% !important;
+  }
 }
 
 @media (min-width:769px) {
@@ -710,6 +718,9 @@ $linkfont: Helvetica, Arial, san-serif;
     #container2{
       padding-top: 0px;
     }
+    #directionsContainer {
+      margin-bottom: 0px;
+    }
     #hotelsContainer {
       margin-bottom: 0px;
     }
@@ -726,6 +737,12 @@ $linkfont: Helvetica, Arial, san-serif;
     }
     #date, #dateMobile, #dateMobileTop{
     top: 0px;
+    }
+    #container15{
+    width: 100%
+    }
+    .form-horizontal .control-label, .form-control {
+      width: 300px;
     }
   }
 

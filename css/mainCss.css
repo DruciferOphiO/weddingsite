@@ -416,6 +416,9 @@ html, body {
     border-bottom: #B76E79;
     color: #B76E79; }
 
+#directionsContainer {
+  margin-bottom: 22px; }
+
 #hotelsContainer {
   margin-bottom: 30px; }
   #hotelsContainer .hotel {
@@ -515,12 +518,15 @@ html, body {
 
 #container15 {
   height: 100%;
-  padding: 0px; }
+  padding: 0px;
+  width: 90%; }
 
 #RSVPifyIFrame {
   width: 100%;
-  height: 80%;
+  height: 100%;
   border: none; }
+  #RSVPifyIFrame .form-horizontal .control-label, #RSVPifyIFrame .form-control {
+    width: 100% !important; }
 
 @media (min-width: 769px) {
   .navbar-inverse .container .navbar-toggle {
@@ -576,6 +582,9 @@ html, body {
   #container2 {
     padding-top: 0px; }
 
+  #directionsContainer {
+    margin-bottom: 0px; }
+
   #hotelsContainer {
     margin-bottom: 0px; }
 
@@ -591,6 +600,12 @@ html, body {
     font-size: 30px; }
 
   #date, #dateMobile, #dateMobileTop {
-    top: 0px; } }
+    top: 0px; }
+
+  #container15 {
+    width: 100%; }
+
+  .form-horizontal .control-label, .form-control {
+    width: 300px; } }
 
 /*# sourceMappingURL=mainCss.css.map */
