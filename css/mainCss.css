@@ -314,7 +314,6 @@ html, body {
   z-index: 100;
   opacity: 1;
   display: block;
-  text-align: center;
   height: auto;
   width: 97%;
   margin-right: auto;
@@ -323,7 +322,7 @@ html, body {
     height: auto;
     width: 100%;
     display: block;
-    text-align: center;
+    text-align: left;
     font-size: 18px;
     font-family: Centaur, Georgia, Times, serif;
     line-height: 22px; }
@@ -404,10 +403,11 @@ html, body {
 
 .detailsecond {
   display: block;
-  font-size: 23px;
+  font-size: 18px;
   color: #9B845D;
   font-family: Centaur, Georgia, Times, serif;
-  margin-top: -4px; }
+  margin-top: -4px;
+  line-height: 22px; }
 
 .detailClick {
   font-size: 13px;
@@ -527,8 +527,6 @@ html, body {
   width: 100%;
   height: 100%;
   border: none; }
-  #RSVPifyIFrame .form-horizontal .control-label, #RSVPifyIFrame .form-control {
-    width: 100% !important; }
 
 @media (min-width: 769px) {
   .navbar-inverse .container .navbar-toggle {
@@ -572,6 +570,7 @@ html, body {
     .lovetext p {
       height: 80%;
       width: 100%;
+      text-align: center;
       position: absolute;
       display: table-cell;
       display: inline-block;
@@ -601,13 +600,14 @@ html, body {
   .detailHeader {
     font-size: 30px; }
 
+  .detailsecond {
+    font-size: 23px;
+    line-height: 27px; }
+
   #date, #dateMobile, #dateMobileTop {
     top: 0px; }
 
   #container15 {
-    width: 100%; }
-
-  .form-horizontal .control-label, .form-control {
-    width: 300px; } }
+    width: 100%; } }
 
 /*# sourceMappingURL=mainCss.css.map */
