@@ -215,7 +215,7 @@ $linkfont: Helvetica, Arial, san-serif;
     #slide4{
     background-image: url("../img/halftone.png");
     background-repeat: repeat;
-    height:50%;
+    height:auto;
     padding: 0px;
   }
       #slide5, #slide5mobile{
@@ -236,7 +236,7 @@ $linkfont: Helvetica, Arial, san-serif;
       #slide6{
     background-image: url("../img/halftone.png");
     background-repeat: repeat;
-    height:65%;
+    height:auto;
     padding: 0px;
   }
       #slide7, #slide7mobile{
@@ -247,7 +247,7 @@ $linkfont: Helvetica, Arial, san-serif;
   }
 
       #slide7mobile {
-    background-image: url("../img/beale2mobile.jpeg");
+    background-image: url("../img/beale2mobile.jpg");
   }
 
         #slide7 {
@@ -257,7 +257,7 @@ $linkfont: Helvetica, Arial, san-serif;
       #slide8{
     background-image: url("../img/halftone.png");
     background-repeat: repeat;
-    height:45%;
+    height:auto;
     padding: 0px;
   }
   
@@ -269,19 +269,17 @@ $linkfont: Helvetica, Arial, san-serif;
     padding: 0px;
   }
   
-        #slide10, #slide10mobile{
+  #slide10, #slide10mobile{
     background-size: contain;
     background-repeat: no-repeat;
     background-position:left top;
     margin-top: -5px;
     height: 10%;
-    @media (min-width:600px) and (max-width:959px) {
-      height: 10%;
-    }
   }
 
         #slide10mobile{
-    background-image: url("../img/homeregistrymobile.png");
+    background-image: url("../img/homeregistrymobile.jpg");
+    height: 30%;
   }
 
         #slide10{
@@ -291,18 +289,18 @@ $linkfont: Helvetica, Arial, san-serif;
         #slide11{
     background-image: url("../img/halftone.png");
     background-repeat: repeat;
-    height:50%;
+    height:auto;
     padding: 0px;
   }
   
-  #slide12 ,#container12mobile{
+  #slide12 ,#slide12mobile{
     background-size: contain;
     background-repeat: no-repeat;
     background-position:left top;
     height: 30%;
   }
 
-  #container12mobile{
+  #slide12mobile{
     background-image: url("../img/honeymoonregistrymobile.jpg");
   }
 
@@ -385,6 +383,12 @@ $linkfont: Helvetica, Arial, san-serif;
     }
   }
   
+  #dateMobileTop{
+    top: 10px;
+  }
+  
+  
+  
   .leftside{
     position: relative;
     left:150px;
@@ -437,7 +441,8 @@ $linkfont: Helvetica, Arial, san-serif;
   }
   
    #row2{
-    height: 100%;
+    height: auto;
+    padding-bottom: 30px;
   }
   
   #row3{

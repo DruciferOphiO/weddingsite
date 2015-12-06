@@ -159,7 +159,7 @@ html, body {
 #slide4 {
   background-image: url("../img/halftone.png");
   background-repeat: repeat;
-  height: 50%;
+  height: auto;
   padding: 0px; }
 
 #slide5, #slide5mobile {
@@ -177,7 +177,7 @@ html, body {
 #slide6 {
   background-image: url("../img/halftone.png");
   background-repeat: repeat;
-  height: 65%;
+  height: auto;
   padding: 0px; }
 
 #slide7, #slide7mobile {
@@ -187,7 +187,7 @@ html, body {
   height: 30%; }
 
 #slide7mobile {
-  background-image: url("../img/beale2mobile.jpeg"); }
+  background-image: url("../img/beale2mobile.jpg"); }
 
 #slide7 {
   background-image: url("../img/beale.jpeg"); }
@@ -195,7 +195,7 @@ html, body {
 #slide8 {
   background-image: url("../img/halftone.png");
   background-repeat: repeat;
-  height: 45%;
+  height: auto;
   padding: 0px; }
 
 #slide9 {
@@ -211,12 +211,10 @@ html, body {
   background-position: left top;
   margin-top: -5px;
   height: 10%; }
-  @media (min-width: 600px) and (max-width: 959px) {
-    #slide10, #slide10mobile {
-      height: 10%; } }
 
 #slide10mobile {
-  background-image: url("../img/homeregistrymobile.png"); }
+  background-image: url("../img/homeregistrymobile.jpg");
+  height: 30%; }
 
 #slide10 {
   background-image: url("../img/HatchMyHouse.png"); }
@@ -224,16 +222,16 @@ html, body {
 #slide11 {
   background-image: url("../img/halftone.png");
   background-repeat: repeat;
-  height: 50%;
+  height: auto;
   padding: 0px; }
 
-#slide12, #container12mobile {
+#slide12, #slide12mobile {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: left top;
   height: 30%; }
 
-#container12mobile {
+#slide12mobile {
   background-image: url("../img/honeymoonregistrymobile.jpg"); }
 
 #slide12 {
@@ -301,6 +299,9 @@ html, body {
   #date:first-child p, #dateMobile:first-child p, #dateMobileTop:first-child p {
     color: #fff; }
 
+#dateMobileTop {
+  top: 10px; }
+
 .leftside {
   position: relative;
   left: 150px; }
@@ -347,7 +348,8 @@ html, body {
   padding-top: 100px; }
 
 #row2 {
-  height: 100%; }
+  height: auto;
+  padding-bottom: 30px; }
 
 #row3 {
   width: 100%; }
