@@ -100,6 +100,7 @@ $linkfont: Helvetica, Arial, san-serif;
     background-color: #fff;
     border-color: transparent;
     box-shadow: 0px 1.25px 2.5px #999;
+    z-index: 1001;
     -webkit-box-shadow: 0px 1.25px 2.5px #999;
     -moz-box-shadow: 0px 1.25px 2.5px #999;
     .container {
@@ -311,21 +312,22 @@ $linkfont: Helvetica, Arial, san-serif;
   #slide13{
     background-image: url("../img/halftone.png");
     background-repeat: repeat;
-    height:45%;
-    padding: 0px;
+    height:auto;
+    padding-bottom: 100px;
+    
   }
   
   #slide14{
     background-image: url("../img/halftone.png");
     background-repeat: repeat;
-    height:150%;
-    padding: 0px;
+    height:auto;
+    padding-bottom: 100px;
   }
   
   #slide15{
     background-image: url("../img/halftone.png");
     background-repeat: repeat;
-    height:120%;
+    height:auto;
     padding: 0px;
   }
   
@@ -367,7 +369,7 @@ $linkfont: Helvetica, Arial, san-serif;
     position: relative;
     left:0 !important;
     top: 95px;
-    z-index: 10000;
+    z-index: 100;
     font-family: Ballpark;
     top: 350px;
     p {
@@ -438,6 +440,7 @@ $linkfont: Helvetica, Arial, san-serif;
    #container2{
     height:100%;
     padding-top: 100px;
+    padding-bottom: 200px;
   }
   
    #row2{
