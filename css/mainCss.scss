@@ -179,52 +179,23 @@ $linkfont: Helvetica, Arial, san-serif;
     background-size: 100%;
     background-repeat: no-repeat;
   }
-  
 
     #slide1mobile{
       background-image: url("../img/mobileBackground.jpg");
-      background-position: 0px 50px !important;
-      height: 90%;
+      background-position: 0px 60px !important;
+      height: 100%;
     }
 
     #slide1{
-
         background-image: url("../img/background.jpg");
     }
-
-  @media (min-width:600px) and (max-width:959px) {
-    #slide1mobile{
-      background-image: url("../img/mobileBackground.jpg");
-    }
-    .navbar-inverse .container .navbar-toggle {
-      margin-top: -60px;
-      padding: 14px 15px;
-    }
-    .mobileLogo {
-      font-size: 25px;
-      left: 99px;
-      top: 24px;
-    }
-    .monogram-mobile #monogram-2 {
-      width: 80px;
-      height: auto;
-    }
-  }
-  
-  @media (min-width:960px) and (max-width:1600px) {
-    #slide1{
-      background-image: url("../img/background.jpg");
-    }
-  }
   
   #slide2{
     background-image: url("../img/halftone.png");
     background-repeat: repeat;
     vertical-align:middle;
-    height:100%;
+    height:auto;
   }
-  
-
   
     #slide3, #slide3mobile{
    background-size: contain;
@@ -303,12 +274,7 @@ $linkfont: Helvetica, Arial, san-serif;
     background-repeat: no-repeat;
     background-position:left top;
     margin-top: -5px;
-    height: 30%;
-    
-    @media (min-width:320px) and (max-width:599px) {
-      height: 10%;
-    }
-    
+    height: 10%;
     @media (min-width:600px) and (max-width:959px) {
       height: 10%;
     }
@@ -405,9 +371,7 @@ $linkfont: Helvetica, Arial, san-serif;
     top: 95px;
     z-index: 10000;
     font-family: Ballpark;
-    @media (min-width:320px) and (max-width:599px) {
-      top: 350px;
-    }
+    top: 350px;
     p {
       font-size: 29px;
       color: #9B845D;
@@ -419,10 +383,6 @@ $linkfont: Helvetica, Arial, san-serif;
     &:first-child p {
         color: #fff;
     }
-  }
-  
-  #dateMobileTop{
-    top: 0px;
   }
   
   .leftside{
@@ -473,9 +433,7 @@ $linkfont: Helvetica, Arial, san-serif;
   }
    #container2{
     height:100%;
-    @media (min-width:320px) and (max-width:599px) {
-      padding-top: 100px;
-    }
+    padding-top: 100px;
   }
   
    #row2{
@@ -567,7 +525,7 @@ $linkfont: Helvetica, Arial, san-serif;
   }
   
   #hotelsContainer {
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     .hotel {  
       margin-bottom: -10px;
         .hotelname.detailHeader {
@@ -582,7 +540,7 @@ $linkfont: Helvetica, Arial, san-serif;
   }
 
   #rehersal {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     .rehersalAddress.detailHeader {
       margin-bottom: -3px;
     }
@@ -720,6 +678,9 @@ $linkfont: Helvetica, Arial, san-serif;
     position: absolute;
     width: 95%;
     }
+    #slide2{
+    height:100%;
+    }
   }
   
   @media (min-width:992px) {
@@ -746,6 +707,9 @@ $linkfont: Helvetica, Arial, san-serif;
         }
       }
     }
+    #container2{
+      padding-top: 0px;
+    }
     #hotelsContainer {
       margin-bottom: 0px;
     }
@@ -759,6 +723,9 @@ $linkfont: Helvetica, Arial, san-serif;
     }
     .detailHeader {
       font-size: 30px;
+    }
+    #date, #dateMobile, #dateMobileTop{
+    top: 0px;
     }
   }
 

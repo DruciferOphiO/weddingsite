@@ -132,36 +132,17 @@ html, body {
 
 #slide1mobile {
   background-image: url("../img/mobileBackground.jpg");
-  background-position: 0px 50px !important;
-  height: 90%; }
+  background-position: 0px 60px !important;
+  height: 100%; }
 
 #slide1 {
   background-image: url("../img/background.jpg"); }
 
-@media (min-width: 600px) and (max-width: 959px) {
-  #slide1mobile {
-    background-image: url("../img/mobileBackground.jpg"); }
-
-  .navbar-inverse .container .navbar-toggle {
-    margin-top: -60px;
-    padding: 14px 15px; }
-
-  .mobileLogo {
-    font-size: 25px;
-    left: 99px;
-    top: 24px; }
-
-  .monogram-mobile #monogram-2 {
-    width: 80px;
-    height: auto; } }
-@media (min-width: 960px) and (max-width: 1600px) {
-  #slide1 {
-    background-image: url("../img/background.jpg"); } }
 #slide2 {
   background-image: url("../img/halftone.png");
   background-repeat: repeat;
   vertical-align: middle;
-  height: 100%; }
+  height: auto; }
 
 #slide3, #slide3mobile {
   background-size: contain;
@@ -229,10 +210,7 @@ html, body {
   background-repeat: no-repeat;
   background-position: left top;
   margin-top: -5px;
-  height: 30%; }
-  @media (min-width: 320px) and (max-width: 599px) {
-    #slide10, #slide10mobile {
-      height: 10%; } }
+  height: 10%; }
   @media (min-width: 600px) and (max-width: 959px) {
     #slide10, #slide10mobile {
       height: 10%; } }
@@ -312,10 +290,8 @@ html, body {
   left: 0 !important;
   top: 95px;
   z-index: 10000;
-  font-family: Ballpark; }
-  @media (min-width: 320px) and (max-width: 599px) {
-    #date, #dateMobile, #dateMobileTop {
-      top: 350px; } }
+  font-family: Ballpark;
+  top: 350px; }
   #date p, #dateMobile p, #dateMobileTop p {
     font-size: 29px;
     color: #9B845D;
@@ -324,9 +300,6 @@ html, body {
       letter-spacing: 2px; }
   #date:first-child p, #dateMobile:first-child p, #dateMobileTop:first-child p {
     color: #fff; }
-
-#dateMobileTop {
-  top: 0px; }
 
 .leftside {
   position: relative;
@@ -370,10 +343,8 @@ html, body {
   height: auto; }
 
 #container2 {
-  height: 100%; }
-  @media (min-width: 320px) and (max-width: 599px) {
-    #container2 {
-      padding-top: 100px; } }
+  height: 100%;
+  padding-top: 100px; }
 
 #row2 {
   height: 100%; }
@@ -446,7 +417,7 @@ html, body {
     color: #B76E79; }
 
 #hotelsContainer {
-  margin-bottom: 25px; }
+  margin-bottom: 30px; }
   #hotelsContainer .hotel {
     margin-bottom: -10px; }
     #hotelsContainer .hotel .hotelname.detailHeader {
@@ -457,7 +428,7 @@ html, body {
   font-family: Centaur, Georgia, Times, serif; }
 
 #rehersal {
-  margin-bottom: 25px; }
+  margin-bottom: 20px; }
   #rehersal .rehersalAddress.detailHeader {
     margin-bottom: -3px; }
 
@@ -576,7 +547,10 @@ html, body {
 
   .imageContainer {
     position: absolute;
-    width: 95%; } }
+    width: 95%; }
+
+  #slide2 {
+    height: 100%; } }
 @media (min-width: 992px) {
   .lovetext {
     position: absolute;
@@ -599,6 +573,9 @@ html, body {
       .lovetext p .bignames {
         font-size: 27px; }
 
+  #container2 {
+    padding-top: 0px; }
+
   #hotelsContainer {
     margin-bottom: 0px; }
 
@@ -611,6 +588,9 @@ html, body {
     border-bottom: none; }
 
   .detailHeader {
-    font-size: 30px; } }
+    font-size: 30px; }
+
+  #date, #dateMobile, #dateMobileTop {
+    top: 0px; } }
 
 /*# sourceMappingURL=mainCss.css.map */
