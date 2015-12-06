@@ -227,11 +227,18 @@ $linkfont: Helvetica, Arial, san-serif;
 
   
     #slide3, #slide3mobile{
-    background-image: url("../img/cedarhall.jpg");
    background-size: contain;
     background-repeat: no-repeat;
     background-position:left top;
     height: 30%;
+  }
+
+  #slide3mobile {
+    background-image: url("../img/cedarhallmobile.jpg");
+  }
+
+    #slide3 {
+    background-image: url("../img/cedarhall.jpg");
   }
   
     #slide4{
@@ -241,12 +248,20 @@ $linkfont: Helvetica, Arial, san-serif;
     padding: 0px;
   }
       #slide5, #slide5mobile{
-    background-image: url("../img/hotels.jpg");
    background-size: contain;
     background-repeat: no-repeat;
     background-position:left top;
     height: 30%;
   }
+
+      #slide5mobile {
+    background-image: url("../img/hotelmobile.jpg");
+  }
+
+        #slide5 {
+    background-image: url("../img/hotels.jpg");
+  }
+
       #slide6{
     background-image: url("../img/halftone.png");
     background-repeat: repeat;
@@ -254,12 +269,20 @@ $linkfont: Helvetica, Arial, san-serif;
     padding: 0px;
   }
       #slide7, #slide7mobile{
-    background-image: url("../img/beale.jpeg");
    background-size: contain;
     background-repeat: no-repeat;
     background-position:left top;
     height: 30%;
   }
+
+      #slide7mobile {
+    background-image: url("../img/beale2mobile.jpeg");
+  }
+
+        #slide7 {
+    background-image: url("../img/beale.jpeg");
+  }
+
       #slide8{
     background-image: url("../img/halftone.png");
     background-repeat: repeat;
@@ -276,7 +299,6 @@ $linkfont: Helvetica, Arial, san-serif;
   }
   
         #slide10, #slide10mobile{
-    background-image: url("../img/HatchMyHouse.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position:left top;
@@ -291,6 +313,14 @@ $linkfont: Helvetica, Arial, san-serif;
       height: 10%;
     }
   }
+
+        #slide10mobile{
+    background-image: url("../img/homeregistrymobile.png");
+  }
+
+        #slide10{
+    background-image: url("../img/HatchMyHouse.png");
+  }
   
         #slide11{
     background-image: url("../img/halftone.png");
@@ -300,11 +330,18 @@ $linkfont: Helvetica, Arial, san-serif;
   }
   
   #slide12 ,#container12mobile{
-    background-image: url("../img/honeymoonregistry.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position:left top;
     height: 30%;
+  }
+
+  #container12mobile{
+    background-image: url("../img/honeymoonregistrymobile.jpg");
+  }
+
+  #slide12{
+    background-image: url("../img/honeymoonregistry.jpg");
   }
   
   #slide13{
@@ -410,11 +447,11 @@ $linkfont: Helvetica, Arial, san-serif;
       text-align: center;
       font-size: 18px;
       font-family: $bodyfont;
-      line-height: 26px;
+      line-height: 22px;
         .bignames {
           display: block;
           font-family: $bodyfont;
-          font-size: 27px;
+          font-size: 20px;
           color: #9B845D;
           text-transform: uppercase;
           text-align: center;
@@ -487,15 +524,16 @@ $linkfont: Helvetica, Arial, san-serif;
   }
   
    .detailkicker {
-    font-size: 17px;
+    font-size: 14px;
     font-family: $bodyfont;
     text-transform: uppercase;
     color: #9B845D;
-    margin-bottom: 2px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #9B845D;
   }
   
   .detailHeader {
-    font-size: 30px;
+    font-size: 25px;
     color: #9B845D;
     font-family: $bodyfont;
     margin-bottom: 2px;
@@ -522,10 +560,11 @@ $linkfont: Helvetica, Arial, san-serif;
   }
   
   #hotelsContainer {
+    margin-bottom: 25px;
     .hotel {  
       margin-bottom: -10px;
         .hotelname.detailHeader {
-          margin-bottom: -5px;
+          margin-bottom: -3px;
         }
     }
   }
@@ -535,11 +574,12 @@ $linkfont: Helvetica, Arial, san-serif;
     font-family: $bodyfont;
   }
 
-  .rehersalAddress.detailHeader {
-    margin-bottom: -5px;
+  #rehersal {
+    margin-bottom: 25px;
+    .rehersalAddress.detailHeader {
+      margin-bottom: -3px;
+    }
   }
-  
-    
  
   #container9{
     height: auto;
@@ -573,15 +613,15 @@ $linkfont: Helvetica, Arial, san-serif;
       text-align: center;
       vertical-align:middle;
       left: 0;
-      top: 35%;
+      top: 45%;
       text-align: center;
-      line-height: 30px;
+      line-height: 23px;
       font-family: $bodyfont;
-      font-size: 22px; 
+      font-size: 18px; 
       .partynames {
         display: block;
         font-family: $bodyfont;
-        font-size: 27px;
+        font-size: 18px;
         color: #9B845D;
         text-transform: uppercase;
         text-align: center;
@@ -646,7 +686,7 @@ $linkfont: Helvetica, Arial, san-serif;
   border:none;
 }
 
-@media (min-width:769px) and (max-width:991px) {
+@media (min-width:769px) {
     .navbar-inverse .container .navbar-toggle {
       margin-top: -60px;
       padding: 14px 15px;
@@ -673,6 +713,9 @@ $linkfont: Helvetica, Arial, san-serif;
     position: absolute;
     width: 95%;
     }
+  }
+  
+  @media (min-width:992px) {
     .lovetext{
     position: absolute;
     opacity: 0;
@@ -690,18 +733,27 @@ $linkfont: Helvetica, Arial, san-serif;
         display:inline-block;
         vertical-align:middle;
         left: 0;
+        line-height: 26px;
+        .bignames {
+          font-size: 27px;
+        }
       }
     }
-  }
-  
-  @media (min-width:992px) and (max-width:1199px) {
-    #slide1{
-      background-image: url("../img/background.jpg");
+    #hotelsContainer {
+      margin-bottom: 0px;
+    }
+    #rehersal {
+      margin-bottom: 0px;
+    }
+    .detailkicker {
+      font-size: 17px;
+      margin-bottom: 2px;
+      border-bottom: none;
+    }
+    .detailHeader {
+      font-size: 30px;
     }
   }
 
-  @media (min-width:1200px) and (max-width:1600px) {
-    #slide1{
-      background-image: url("../img/background.jpg");
-    }
+  @media (min-width:1200px) {
   }

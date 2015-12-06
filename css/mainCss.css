@@ -162,11 +162,16 @@ html, body {
   height: 140%; }
 
 #slide3, #slide3mobile {
-  background-image: url("../img/cedarhall.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: left top;
   height: 30%; }
+
+#slide3mobile {
+  background-image: url("../img/cedarhallmobile.jpg"); }
+
+#slide3 {
+  background-image: url("../img/cedarhall.jpg"); }
 
 #slide4 {
   background-image: url("../img/halftone.png");
@@ -175,11 +180,16 @@ html, body {
   padding: 0px; }
 
 #slide5, #slide5mobile {
-  background-image: url("../img/hotels.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: left top;
   height: 30%; }
+
+#slide5mobile {
+  background-image: url("../img/hotelmobile.jpg"); }
+
+#slide5 {
+  background-image: url("../img/hotels.jpg"); }
 
 #slide6 {
   background-image: url("../img/halftone.png");
@@ -188,11 +198,16 @@ html, body {
   padding: 0px; }
 
 #slide7, #slide7mobile {
-  background-image: url("../img/beale.jpeg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: left top;
   height: 30%; }
+
+#slide7mobile {
+  background-image: url("../img/beale2mobile.jpeg"); }
+
+#slide7 {
+  background-image: url("../img/beale.jpeg"); }
 
 #slide8 {
   background-image: url("../img/halftone.png");
@@ -208,7 +223,6 @@ html, body {
   padding: 0px; }
 
 #slide10, #slide10mobile {
-  background-image: url("../img/HatchMyHouse.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: left top;
@@ -221,6 +235,12 @@ html, body {
     #slide10, #slide10mobile {
       height: 10%; } }
 
+#slide10mobile {
+  background-image: url("../img/homeregistrymobile.png"); }
+
+#slide10 {
+  background-image: url("../img/HatchMyHouse.png"); }
+
 #slide11 {
   background-image: url("../img/halftone.png");
   background-repeat: repeat;
@@ -228,11 +248,16 @@ html, body {
   padding: 0px; }
 
 #slide12, #container12mobile {
-  background-image: url("../img/honeymoonregistry.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: left top;
   height: 30%; }
+
+#container12mobile {
+  background-image: url("../img/honeymoonregistrymobile.jpg"); }
+
+#slide12 {
+  background-image: url("../img/honeymoonregistry.jpg"); }
 
 #slide13 {
   background-image: url("../img/halftone.png");
@@ -322,11 +347,11 @@ html, body {
     text-align: center;
     font-size: 18px;
     font-family: Centaur, Georgia, Times, serif;
-    line-height: 26px; }
+    line-height: 22px; }
     .lovetext p .bignames {
       display: block;
       font-family: Centaur, Georgia, Times, serif;
-      font-size: 27px;
+      font-size: 20px;
       color: #9B845D;
       text-transform: uppercase;
       text-align: center;
@@ -383,14 +408,15 @@ html, body {
     width: 98.75%; }
 
 .detailkicker {
-  font-size: 17px;
+  font-size: 14px;
   font-family: Centaur, Georgia, Times, serif;
   text-transform: uppercase;
   color: #9B845D;
-  margin-bottom: 2px; }
+  margin-bottom: 15px;
+  border-bottom: 1px solid #9B845D; }
 
 .detailHeader {
-  font-size: 30px;
+  font-size: 25px;
   color: #9B845D;
   font-family: Centaur, Georgia, Times, serif;
   margin-bottom: 2px; }
@@ -411,17 +437,21 @@ html, body {
     border-bottom: #B76E79;
     color: #B76E79; }
 
-#hotelsContainer .hotel {
-  margin-bottom: -10px; }
-  #hotelsContainer .hotel .hotelname.detailHeader {
-    margin-bottom: -5px; }
+#hotelsContainer {
+  margin-bottom: 25px; }
+  #hotelsContainer .hotel {
+    margin-bottom: -10px; }
+    #hotelsContainer .hotel .hotelname.detailHeader {
+      margin-bottom: -3px; }
 
 .detailText {
   font-size: 18px;
   font-family: Centaur, Georgia, Times, serif; }
 
-.rehersalAddress.detailHeader {
-  margin-bottom: -5px; }
+#rehersal {
+  margin-bottom: 25px; }
+  #rehersal .rehersalAddress.detailHeader {
+    margin-bottom: -3px; }
 
 #container9 {
   height: auto;
@@ -453,15 +483,15 @@ html, body {
     text-align: center;
     vertical-align: middle;
     left: 0;
-    top: 35%;
+    top: 45%;
     text-align: center;
-    line-height: 30px;
+    line-height: 23px;
     font-family: Centaur, Georgia, Times, serif;
-    font-size: 22px; }
+    font-size: 18px; }
     .partText p .partynames {
       display: block;
       font-family: Centaur, Georgia, Times, serif;
-      font-size: 27px;
+      font-size: 18px;
       color: #9B845D;
       text-transform: uppercase;
       text-align: center; }
@@ -513,7 +543,7 @@ html, body {
   height: 80%;
   border: none; }
 
-@media (min-width: 769px) and (max-width: 991px) {
+@media (min-width: 769px) {
   .navbar-inverse .container .navbar-toggle {
     margin-top: -60px;
     padding: 14px 15px; }
@@ -538,8 +568,8 @@ html, body {
 
   .imageContainer {
     position: absolute;
-    width: 95%; }
-
+    width: 95%; } }
+@media (min-width: 992px) {
   .lovetext {
     position: absolute;
     opacity: 0;
@@ -556,12 +586,23 @@ html, body {
       display: table-cell;
       display: inline-block;
       vertical-align: middle;
-      left: 0; } }
-@media (min-width: 992px) and (max-width: 1199px) {
-  #slide1 {
-    background-image: url("../img/background.jpg"); } }
-@media (min-width: 1200px) and (max-width: 1600px) {
-  #slide1 {
-    background-image: url("../img/background.jpg"); } }
+      left: 0;
+      line-height: 26px; }
+      .lovetext p .bignames {
+        font-size: 27px; }
+
+  #hotelsContainer {
+    margin-bottom: 0px; }
+
+  #rehersal {
+    margin-bottom: 0px; }
+
+  .detailkicker {
+    font-size: 17px;
+    margin-bottom: 2px;
+    border-bottom: none; }
+
+  .detailHeader {
+    font-size: 30px; } }
 
 /*# sourceMappingURL=mainCss.css.map */
