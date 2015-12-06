@@ -131,7 +131,9 @@ html, body {
   background-repeat: no-repeat; }
 
 #slide1mobile {
-  background-image: url("../img/mobileBackground.jpg"); }
+  background-image: url("../img/mobileBackground.jpg");
+  background-position: 0px 50px !important;
+  height: 90%; }
 
 #slide1 {
   background-image: url("../img/background.jpg"); }
@@ -159,7 +161,7 @@ html, body {
   background-image: url("../img/halftone.png");
   background-repeat: repeat;
   vertical-align: middle;
-  height: 140%; }
+  height: 100%; }
 
 #slide3, #slide3mobile {
   background-image: url("../img/cedarhall.jpg");
@@ -280,23 +282,26 @@ html, body {
 #shadow {
   width: 100%; }
 
-#date {
+#date, #dateMobile, #dateMobileTop {
   position: relative;
   left: 0 !important;
   top: 95px;
   z-index: 10000;
   font-family: Ballpark; }
   @media (min-width: 320px) and (max-width: 599px) {
-    #date {
-      top: 500px; } }
-  #date p {
+    #date, #dateMobile, #dateMobileTop {
+      top: 350px; } }
+  #date p, #dateMobile p, #dateMobileTop p {
     font-size: 29px;
     color: #9B845D;
     margin-top: 15px; }
-    #date p .numbers {
+    #date p .numbers, #dateMobile p .numbers, #dateMobileTop p .numbers {
       letter-spacing: 2px; }
-  #date:first-child p {
+  #date:first-child p, #dateMobile:first-child p, #dateMobileTop:first-child p {
     color: #fff; }
+
+#dateMobileTop {
+  top: 0px; }
 
 .leftside {
   position: relative;
@@ -341,6 +346,9 @@ html, body {
 
 #container2 {
   height: 100%; }
+  @media (min-width: 320px) and (max-width: 599px) {
+    #container2 {
+      padding-top: 100px; } }
 
 #row2 {
   height: 100%; }

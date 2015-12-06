@@ -12,7 +12,8 @@ jQuery(document).ready(function ($) {
          rsvpPage = $('#container15'),
          weddingTitle = $('#theWedding'),
          navbackground = $(".white-shadow");
-    
+    var textCenterTop = $('#text-center-mobile-top')
+    textCenterTop.fadeOut(0);
     if (screen.width < 600)
     {
         registryPage = $('#container10mobile')
@@ -24,7 +25,6 @@ jQuery(document).ready(function ($) {
     
          if (height < secondPage.offset().top)
          {
-             textCenter.text("May 6, 2016");
              navbackground.css("opacity", 0.8);
          }
         else {
@@ -33,55 +33,48 @@ jQuery(document).ready(function ($) {
         }
 
         if ($( window ).width() < 599) {
+            textCenter = $('#text-center-mobile')
+        //    textCenter.text(height+"  "+secondPage.offset().top);
             var titleHeight = $(window).scrollTop() +160;
             var delayHeight = $(window).scrollTop()+300;
             var fadeoutTime = 700;
-            textCenter.text("at "+height+" vs = "+$('#slide1').height());
-             if (height < $('#slide1').height())
+             if (height < 100)
              {
-                
-                // textCenter.text("May 6, 2016");
+                 textCenter.text("May 6, 2016");
                  textCenter.fadeIn(fadeoutTime);
              }
-             else if (titleHeight >= secondPage.offset().top && delayHeight < thirdPage.offset().top)
-             {
-                 textCenter.text("Love Story");
-                 textCenter.fadeIn(fadeoutTime);
-                 
+             else if (height+110 > secondPage.offset().top && height < secondPage.offset().top) {
+
+                textCenterTop.fadeIn(fadeoutTime);
              }
-             else if (height+140 < thirdPage.offset().top && height+400 >= thirdPage.offset().top)
-             {
-                textCenter.text("The Wedding");
-                textCenter.fadeIn(fadeoutTime);
-             }
-    
-             else if (height+150 < partyPage.offset().top && height+400 >= partyPage.offset().top)
-             {
-                textCenter.text("The Party");
-                textCenter.fadeIn(fadeoutTime);
-             }
-        
-             else if (height+500 > registryPage.offset().top && height+350 < registryPage.offset().top)
-             {
-                textCenter.text("The Registry");
-                textCenter.fadeIn(fadeoutTime);
-             }
-             else if (height >= galleryPage.offset().top-200 && height < galleryPage.offset().top-5)
-             {
-                textCenter.text("Our Gallery");
-                textCenter.fadeIn(fadeoutTime);
-             }
-             else if (height >= rsvpPage.offset().top-320 && height < rsvpPage.offset().top-130)
-             {
-                textCenter.text("RSVP");
-                textCenter.fadeIn(fadeoutTime);
-             }
+
              else
              {
                 textCenter.fadeOut(fadeoutTime);
+                textCenterTop.fadeOut(fadeoutTime);
              }
         }
-        
+        else if ($( window ).width() > 599 && $( window ).width() < 991) {
+            textCenter = $('#text-center-mobile')
+        //    textCenter.text(height+"  "+secondPage.offset().top);
+            var titleHeight = $(window).scrollTop() +160;
+            var delayHeight = $(window).scrollTop()+300;
+            var fadeoutTime = 700;
+             if (height+120 <  secondPage.offset().top)
+             {
+                 textCenter.text("May 6, 2016");
+                 textCenter.fadeIn(fadeoutTime);
+             }
+             else if (height+50 <  secondPage.offset().top){
+                textCenter.text("Love Story");
+                 textCenter.fadeIn(fadeoutTime);
+             }
+             else 
+             {
+                
+                 textCenter.fadeOut(fadeoutTime);
+             }
+        }
         else {
             var titleHeight = $(window).scrollTop() +160;
             var delayHeight = $(window).scrollTop()+300;
@@ -133,43 +126,47 @@ jQuery(document).ready(function ($) {
          
      });
      
-     $( "#leftHalf" ).hover(
-        function()
-        {
-            $("#drewText").css("opacity", 1);
-            $("#drewImage").css("opacity", 0.05);
-            $("#gelText").css("opacity", 0);
-            $("#gelImage").css("opacity", 1);
-        },
-        function()
-        {
-            $("#drewText").css("opacity", 0);
-            $("#drewImage").css("opacity", 1);
-            $("#gelText").css("opacity", 0);
-            $("#gelImage").css("opacity", 1);
-        }
-     );
-     
-     $("p").on("taphold",function(){
-        $(this).hide();
-    });
-     
-     $( "#rightHalf" ).hover(
-        function()
-        {
-            $("#gelText").css("opacity", 1);
-            $("#gelImage").css("opacity", 0.05);
-            $("#drewText").css("opacity", 0);
-            $("#drewImage").css("opacity", 1);
-        },
-        function()
-        {
-            $("#gelText").css("opacity", 0);
-            $("#gelImage").css("opacity", 1);
-            $("#drewText").css("opacity", 0);
-            $("#drewImage").css("opacity", 1);
-        }
-     );
+     if ($( window ).width() >991){
+        
+             $( "#leftHalf" ).hover(
+                function()
+                {
+                    $("#drewText").css("opacity", 1);
+                    $("#drewImage").css("opacity", 0.05);
+                    $("#gelText").css("opacity", 0);
+                    $("#gelImage").css("opacity", 1);
+                },
+                function()
+                {
+                    $("#drewText").css("opacity", 0);
+                    $("#drewImage").css("opacity", 1);
+                    $("#gelText").css("opacity", 0);
+                    $("#gelImage").css("opacity", 1);
+                }
+             );
+             
+             $("p").on("taphold",function(){
+                $(this).hide();
+            });
+             
+             $( "#rightHalf" ).hover(
+                function()
+                {
+                    $("#gelText").css("opacity", 1);
+                    $("#gelImage").css("opacity", 0.05);
+                    $("#drewText").css("opacity", 0);
+                    $("#drewImage").css("opacity", 1);
+                },
+                function()
+                {
+                    $("#gelText").css("opacity", 0);
+                    $("#gelImage").css("opacity", 1);
+                    $("#drewText").css("opacity", 0);
+                    $("#drewImage").css("opacity", 1);
+                }
+             );
+     }
+
      
       
     $("#monogram").click(function (e) {
