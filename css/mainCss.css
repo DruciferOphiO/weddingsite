@@ -161,7 +161,10 @@ html, body {
   background-image: url("../img/halftone.png");
   background-repeat: repeat;
   vertical-align: middle;
-  height: 100%; }
+  height: auto; }
+  @media (min-width: 600px) and (max-width: 959px) {
+    #slide2 {
+      height: 100%; } }
 
 #slide3, #slide3mobile {
   background-size: contain;
