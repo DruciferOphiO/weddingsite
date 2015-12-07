@@ -204,17 +204,19 @@ html, body {
   background-repeat: repeat;
   height: auto;
   display: inline-block;
-  padding: 0px; }
+  padding: 0px;
+  top: 5px; }
 
 #slide10, #slide10mobile {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: left top;
-  margin-top: -5px;
   height: 10%; }
 
 #slide10mobile {
   background-image: url("../img/homeregistrymobile.jpg");
+  background-position: 0px -5px;
+  margin: 0px;
   height: 30%; }
 
 #slide10 {
@@ -242,13 +244,13 @@ html, body {
   background-image: url("../img/halftone.png");
   background-repeat: repeat;
   height: auto;
-  padding-bottom: 100px; }
+  padding-bottom: 200px; }
 
 #slide14 {
   background-image: url("../img/halftone.png");
   background-repeat: repeat;
   height: auto;
-  padding-bottom: 100px; }
+  padding-bottom: 200px; }
 
 #slide15 {
   background-image: url("../img/halftone.png");
@@ -495,8 +497,12 @@ html, body {
   height: auto; }
 
 #myCarousel {
-  width: 90%;
-  margin: auto; }
+  width: 100%;
+  margin: 0; }
+
+#container14 {
+  height: auto;
+  padding: 0px; }
 
 .carousel-control.left, .carousel-control.right {
   background: none !important;
@@ -522,7 +528,7 @@ html, body {
 
 #container15 {
   height: 100%;
-  padding: 0px;
+  padding-bottom: 200px;
   width: 90%; }
 
 #RSVPifyIFrame {
