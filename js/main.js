@@ -35,21 +35,42 @@ jQuery(document).ready(function ($) {
     //easing plugin is also used, so we passed in the easing method of 'easeInOutQuint' which is available throught the plugin.
     function goToByScroll(dataslide) {
         var offset = 0;
-        if (dataslide == 3)
-        {
-            offset = -200;
-        }
-        
-        if (dataslide == 10) {
-            offset = -200;
-        }
-        
-        if (dataslide == 14) {
-            offset = -25;
-        }
-        
-        if (dataslide == 15) {
-            offset = -200;
+        if ($( window ).width() < 599) {
+            if (dataslide == 2)
+            {
+                offset = -55;
+            }
+            
+            if (dataslide == 30)
+            {
+                offset = -270;
+            }
+            
+            if (dataslide == 100)
+            {
+                offset = -270;
+            }
+            if (dataslide == 14)
+            {
+                offset = -270;
+            }
+        } else {
+            if (dataslide == 3)
+            {
+                offset = -200;
+            }
+            
+            if (dataslide == 10) {
+                offset = -200;
+            }
+            
+            if (dataslide == 14) {
+                offset = -25;
+            }
+            
+            if (dataslide == 15) {
+                offset = -200;
+            }
         }
         htmlbody.animate({
             scrollTop: $('.slide[data-slide="' + dataslide + '"]').offset().top + offset

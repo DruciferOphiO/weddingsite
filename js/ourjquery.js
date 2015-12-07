@@ -12,12 +12,8 @@ jQuery(document).ready(function ($) {
          rsvpPage = $('#container15'),
          weddingTitle = $('#theWedding'),
          navbackground = $(".white-shadow");
-    var textCenterTop = $('#text-center-mobile-top')
+    var textCenterTop = $('#text-center-mobile-top');
     textCenterTop.fadeOut(0);
-    if (screen.width < 600)
-    {
-        registryPage = $('#container10mobile')
-    }
 
          
      documentEl.on('scroll', function() {
@@ -37,24 +33,51 @@ jQuery(document).ready(function ($) {
         //    textCenter.text(height+"  "+secondPage.offset().top);
             var titleHeight = $(window).scrollTop() +160;
             var delayHeight = $(window).scrollTop()+300;
+            thirdPage = $('#container3mobile');
+            registryPage = $('#container10mobile')
             var fadeoutTime = 700;
              if (height < 100)
              {
                  textCenter.text("May 6, 2016");
                  textCenter.fadeIn(fadeoutTime);
+                 textCenterTop.fadeOut(fadeoutTime);
              }
              else if (height+110 > secondPage.offset().top && height < secondPage.offset().top) {
 
                 textCenterTop.fadeIn(fadeoutTime);
              }
+             else if (height+320 > thirdPage.offset().top && height+130 < thirdPage.offset().top) {
 
+                textCenterTop.text("The Wedding");
+                textCenterTop.fadeIn(fadeoutTime);
+             }
+             else if (height+320 > partyPage.offset().top && height+130 < partyPage.offset().top) {
+
+                textCenterTop.text("The Party");
+                textCenterTop.fadeIn(fadeoutTime);
+             }
+             else if (height+320 > registryPage.offset().top && height+130 < registryPage.offset().top) {
+
+                textCenterTop.text("The Registry");
+                textCenterTop.fadeIn(fadeoutTime);
+             }
+             else if (height+320 > galleryPage.offset().top && height+130 < galleryPage.offset().top) {
+
+                textCenterTop.text("Our Gallery");
+                textCenterTop.fadeIn(fadeoutTime);
+             }
+             else if (height+320 > rsvpPage.offset().top && height+130 < rsvpPage.offset().top) {
+
+                textCenterTop.text("RSVP");
+                textCenterTop.fadeIn(fadeoutTime);
+             }
              else
              {
                 textCenter.fadeOut(fadeoutTime);
                 textCenterTop.fadeOut(fadeoutTime);
              }
         }
-        else if ($( window ).width() > 599 && $( window ).width() < 991) {
+        else if ($( window ).width() < 599) {
             textCenter = $('#text-center-mobile')
         //    textCenter.text(height+"  "+secondPage.offset().top);
             var titleHeight = $(window).scrollTop() +160;
@@ -174,136 +197,234 @@ jQuery(document).ready(function ($) {
             scrollTop: $("#slide1").offset().top
         }, 2000, 'easeInOutQuint');
     });
-     
-     $('#partyPicText1').hover(
-        function()
-        {
+    
+     $("#monogram-2").click(function (e) {
+       htmlbody.animate({
+            scrollTop: $("#slide1mobile").offset().top
+        }, 2000, 'easeInOutQuint');
+    });
+     if ($( window ).width() < 991) {
+        $('#partyPicText1').bind('touchstart', function(e){
             $('#partyPic1').css("opacity", 0.05);
             $('#partyText1').css("opacity", 1);
-        },
-        function()
-        {
+        });
+        $('#partyPicText1').bind('touchend', function(e){
             $('#partyPic1').css("opacity", 1);
             $('#partyText1').css("opacity", 0);
-        }
-     );
-     
-     $('#partyPicText2').hover(
-        function()
-        {
+        });
+        
+        $('#partyPicText2').bind('touchstart', function(e){
             $('#partyPic2').css("opacity", 0.05);
             $('#partyText2').css("opacity", 1);
-        },
-        function()
-        {
+        });
+        $('#partyPicText2').bind('touchend', function(e){
             $('#partyPic2').css("opacity", 1);
-            $('#partyText2').css("opacity",0);
-        }
-     );
-     
-     $('#partyPicText3').hover(
-        function()
-        {
+            $('#partyText2').css("opacity", 0);
+        });
+        
+        $('#partyPicText3').bind('touchstart', function(e){
             $('#partyPic3').css("opacity", 0.05);
             $('#partyText3').css("opacity", 1);
-        },
-        function()
-        {
+        });
+        $('#partyPicText3').bind('touchend', function(e){
             $('#partyPic3').css("opacity", 1);
             $('#partyText3').css("opacity", 0);
-        }
-     );
-     
-     $('#partyPicText4').hover(
-        function()
-        {
+        });
+        
+        $('#partyPicText4').bind('touchstart', function(e){
             $('#partyPic4').css("opacity", 0.05);
             $('#partyText4').css("opacity", 1);
-        },
-        function()
-        {
+        });
+        $('#partyPicText4').bind('touchend', function(e){
             $('#partyPic4').css("opacity", 1);
             $('#partyText4').css("opacity", 0);
-        }
-     );
-     
-     $('#partyPicText5').hover(
-        function()
-        {
+        });
+        
+        $('#partyPicText5').bind('touchstart', function(e){
             $('#partyPic5').css("opacity", 0.05);
             $('#partyText5').css("opacity", 1);
-        },
-        function()
-        {
+        });
+        $('#partyPicText5').bind('touchend', function(e){
             $('#partyPic5').css("opacity", 1);
             $('#partyText5').css("opacity", 0);
-        }
-     );
-     
-     $('#partyPicText6').hover(
-        function()
-        {
+        });
+        
+        $('#partyPicText6').bind('touchstart', function(e){
             $('#partyPic6').css("opacity", 0.05);
             $('#partyText6').css("opacity", 1);
-        },
-        function()
-        {
+        });
+        $('#partyPicText6').bind('touchend', function(e){
             $('#partyPic6').css("opacity", 1);
             $('#partyText6').css("opacity", 0);
-        }
-     );
-     
-     $('#partyPicText7').hover(
-        function()
-        {
+        });
+        
+        $('#partyPicText7').bind('touchstart', function(e){
             $('#partyPic7').css("opacity", 0.05);
             $('#partyText7').css("opacity", 1);
-        },
-        function()
-        {
+        });
+        $('#partyPicText7').bind('touchend', function(e){
             $('#partyPic7').css("opacity", 1);
             $('#partyText7').css("opacity", 0);
-        }
-     );
-     
-     $('#partyPicText8').hover(
-        function()
-        {
+        });
+        
+        $('#partyPicText8').bind('touchstart', function(e){
             $('#partyPic8').css("opacity", 0.05);
             $('#partyText8').css("opacity", 1);
-        },
-        function()
-        {
+        });
+        $('#partyPicText8').bind('touchend', function(e){
             $('#partyPic8').css("opacity", 1);
             $('#partyText8').css("opacity", 0);
-        }
-     );
-     
-     $('#partyPicText9').hover(
-        function()
-        {
+        });
+        
+        $('#partyPicText9').bind('touchstart', function(e){
             $('#partyPic9').css("opacity", 0.05);
             $('#partyText9').css("opacity", 1);
-        },
-        function()
-        {
+        });
+        $('#partyPicText9').bind('touchend', function(e){
             $('#partyPic9').css("opacity", 1);
             $('#partyText9').css("opacity", 0);
-        }
-     );
-     
-     $('#partyPicText10').hover(
-        function()
-        {
+        });
+        
+        $('#partyPicText10').bind('touchstart', function(e){
             $('#partyPic10').css("opacity", 0.05);
             $('#partyText10').css("opacity", 1);
-        },
-        function()
-        {
+        });
+        $('#partyPicText10').bind('touchend', function(e){
             $('#partyPic10').css("opacity", 1);
             $('#partyText10').css("opacity", 0);
-        }
-     );
+        });
+     } else {
+        $('#partyPicText1').hover(
+            function()
+            {
+                $('#partyPic1').css("opacity", 0.05);
+                $('#partyText1').css("opacity", 1);
+            },
+            function()
+            {
+                $('#partyPic1').css("opacity", 1);
+                $('#partyText1').css("opacity", 0);
+            }
+         );
+         
+         $('#partyPicText2').hover(
+            function()
+            {
+                $('#partyPic2').css("opacity", 0.05);
+                $('#partyText2').css("opacity", 1);
+            },
+            function()
+            {
+                $('#partyPic2').css("opacity", 1);
+                $('#partyText2').css("opacity",0);
+            }
+         );
+         
+         $('#partyPicText3').hover(
+            function()
+            {
+                $('#partyPic3').css("opacity", 0.05);
+                $('#partyText3').css("opacity", 1);
+            },
+            function()
+            {
+                $('#partyPic3').css("opacity", 1);
+                $('#partyText3').css("opacity", 0);
+            }
+         );
+         
+         $('#partyPicText4').hover(
+            function()
+            {
+                $('#partyPic4').css("opacity", 0.05);
+                $('#partyText4').css("opacity", 1);
+            },
+            function()
+            {
+                $('#partyPic4').css("opacity", 1);
+                $('#partyText4').css("opacity", 0);
+            }
+         );
+         
+         $('#partyPicText5').hover(
+            function()
+            {
+                $('#partyPic5').css("opacity", 0.05);
+                $('#partyText5').css("opacity", 1);
+            },
+            function()
+            {
+                $('#partyPic5').css("opacity", 1);
+                $('#partyText5').css("opacity", 0);
+            }
+         );
+         
+         $('#partyPicText6').hover(
+            function()
+            {
+                $('#partyPic6').css("opacity", 0.05);
+                $('#partyText6').css("opacity", 1);
+            },
+            function()
+            {
+                $('#partyPic6').css("opacity", 1);
+                $('#partyText6').css("opacity", 0);
+            }
+         );
+         
+         $('#partyPicText7').hover(
+            function()
+            {
+                $('#partyPic7').css("opacity", 0.05);
+                $('#partyText7').css("opacity", 1);
+            },
+            function()
+            {
+                $('#partyPic7').css("opacity", 1);
+                $('#partyText7').css("opacity", 0);
+            }
+         );
+         
+         $('#partyPicText8').hover(
+            function()
+            {
+                $('#partyPic8').css("opacity", 0.05);
+                $('#partyText8').css("opacity", 1);
+            },
+            function()
+            {
+                $('#partyPic8').css("opacity", 1);
+                $('#partyText8').css("opacity", 0);
+            }
+         );
+         
+         $('#partyPicText9').hover(
+            function()
+            {
+                $('#partyPic9').css("opacity", 0.05);
+                $('#partyText9').css("opacity", 1);
+            },
+            function()
+            {
+                $('#partyPic9').css("opacity", 1);
+                $('#partyText9').css("opacity", 0);
+            }
+         );
+         
+         $('#partyPicText10').hover(
+            function()
+            {
+                $('#partyPic10').css("opacity", 0.05);
+                $('#partyText10').css("opacity", 1);
+            },
+            function()
+            {
+                $('#partyPic10').css("opacity", 1);
+                $('#partyText10').css("opacity", 0);
+            }
+         );
+     }
+     
      
     $("#myCarousel").click(function(){
         textCenter.fadeOut(700);
