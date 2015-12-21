@@ -24,30 +24,31 @@ html, body {
   top: 0;
   z-index: 997;
   width: 100%;
-  height: auto; }
+  height: auto;
+  background-color: white; }
   .navigation ul {
     position: relative;
     list-style-type: none;
-    margin: 8px 0 0 0;
+    margin: 5px 0 0 0;
     padding: 0;
     overflow: hidden;
     z-index: 999; }
   .navigation li {
     display: inline;
     padding: 5px 5px;
-    width: 11%;
+    width: 15%;
     float: left;
     margin-left: auto;
     margin-right: auto;
     text-align: center; }
   .navigation li:nth-child(4) {
-    width: 17%; }
+    width: 10%; }
   .navigation a {
     color: #9B845D;
     font-family: UpperEastSide;
-    font-size: 16px;
+    font-size: 15px;
     text-decoration: none;
-    letter-spacing: 1.6px; }
+    letter-spacing: 1.1px; }
     .navigation a:hover {
       content: "";
       border-bottom: 1px solid #9B845D; }
@@ -266,9 +267,9 @@ html, body {
 .monogram {
   display: inline;
   position: absolute;
-  left: 46.28%;
-  top: -5.27%;
-  width: 7.5%;
+  left: 45.89%;
+  top: 2.5%;
+  width: 8.25%;
   z-index: 998; }
 
 #monogram {
@@ -279,7 +280,7 @@ html, body {
 .white-shadow {
   display: inline;
   position: absolute;
-  top: -8px;
+  top: 7px;
   width: 100%;
   opacity: .8; }
 
@@ -307,11 +308,11 @@ html, body {
 
 .leftside {
   position: relative;
-  left: 150px; }
+  left: 0px; }
 
 .rightside {
   position: relative;
-  left: 86px; }
+  left: 10px; }
 
 .lovetext {
   z-index: 100;
@@ -545,7 +546,7 @@ html, body {
 #RSVPifyIFrame .cover-page .step-from .form-horizontal .control-label .form-control {
   width: 100% !important; }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .navbar-inverse .container .navbar-toggle {
     margin-top: -60px;
     padding: 14px 15px; }
@@ -562,6 +563,9 @@ html, body {
   #date:first-child p {
     color: #9B845D; }
 
+  #slide1mobile {
+    background-position: 0px 39px !important; }
+
   #leftHalf {
     top: 25px;
     left: -2px;
@@ -575,6 +579,28 @@ html, body {
   #slide2 {
     height: 100%; } }
 @media (min-width: 992px) {
+  .navigation {
+    background-color: none; }
+
+  .navigation ul {
+    margin: 8px 0 0 0; }
+
+  .navigation li {
+    width: 11%; }
+
+  .navigation li:nth-child(4) {
+    width: 17%; }
+
+  .navigation a {
+    font-size: 16px;
+    letter-spacing: 1.5px; }
+
+  .leftside {
+    left: 150px; }
+
+  .rightside {
+    left: 86px; }
+
   .lovetext {
     position: absolute;
     opacity: 0;
@@ -629,6 +655,13 @@ html, body {
     top: 0px; }
 
   #container15 {
-    width: 100%; } }
+    width: 100%; }
+
+  .monogram {
+    left: 46.28%;
+    width: 7.5%; }
+
+  .white-shadow {
+    top: -8px; } }
 
 /*# sourceMappingURL=mainCss.css.map */
