@@ -114,7 +114,7 @@ html, body {
     height: auto; }
 
 .main {
-  width: 100%;
+  width: 100.5%;
   height: 100%;
   position: relative; }
 
@@ -205,29 +205,30 @@ html, body {
   background-repeat: repeat;
   height: auto;
   display: inline-block;
-  padding: 0px;
-  top: 5px; }
+  padding: 0px; }
 
 #slide10, #slide10mobile {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: left top;
-  height: 10%; }
+  height: 30%; }
 
 #slide10mobile {
   background-image: url("../img/homeregistrymobile.jpg");
   background-position: 0px -5px;
   margin: 0px;
-  height: 30%; }
+  top: -5px; }
 
 #slide10 {
-  background-image: url("../img/HatchMyHouse.png"); }
+  background-image: url("../img/HatchMyHouse.png");
+  top: -5px; }
 
 #slide11 {
   background-image: url("../img/halftone.png");
   background-repeat: repeat;
   height: auto;
-  padding: 0px; }
+  padding: 0px;
+  top: -5px; }
 
 #slide12, #slide12mobile {
   background-size: contain;
@@ -236,7 +237,8 @@ html, body {
   height: 30%; }
 
 #slide12mobile {
-  background-image: url("../img/honeymoonregistrymobile.jpg"); }
+  background-image: url("../img/honeymoonregistrymobile.jpg");
+  top: -5px; }
 
 #slide12 {
   background-image: url("../img/honeymoonregistry.jpg"); }
@@ -245,19 +247,22 @@ html, body {
   background-image: url("../img/halftone.png");
   background-repeat: repeat;
   height: auto;
-  padding-bottom: 200px; }
+  padding-bottom: 200px;
+  top: -5px; }
 
 #slide14 {
   background-image: url("../img/halftone.png");
   background-repeat: repeat;
   height: auto;
-  padding-bottom: 200px; }
+  padding-bottom: 200px;
+  top: -5px; }
 
 #slide15 {
   background-image: url("../img/halftone.png");
   background-repeat: repeat;
   height: 100%;
-  padding: 0px; }
+  padding: 0px;
+  top: -5px; }
 
 .navigation-background {
   display: block;
@@ -394,7 +399,8 @@ html, body {
   display: inline-block;
   vertical-align: middle; }
   #rightHalf .imageContainer .framedPic {
-    width: 98.75%; }
+    width: 100%;
+    margin-bottom: 5px; }
 
 .detailkicker {
   font-size: 14px;
@@ -572,12 +578,36 @@ html, body {
     display: inline-block;
     vertical-align: middle; }
 
+  #drewImage {
+    width: 100%; }
+
+  #gelImageContainer {
+    width: 98.75%; }
+
   .imageContainer {
-    position: absolute;
-    width: 95%; }
+    position: relative; }
+
+  #date, #dateMobile, #dateMobileTop {
+    top: 100px; }
 
   #slide2 {
-    height: 100%; } }
+    height: auto; }
+
+  #container2 {
+    height: auto; }
+
+  #container4 {
+    height: auto; }
+
+  #row4 {
+    height: auto;
+    margin-bottom: 50px; }
+
+  #row6 {
+    height: auto; }
+
+  #hotelsContainer {
+    margin-bottom: 50px; } }
 @media (min-width: 992px) {
   .navigation {
     background-color: none; }
@@ -625,7 +655,7 @@ html, body {
         font-size: 27px; }
 
   #container2 {
-    padding-top: 0px; }
+    padding-top: 50px; }
 
   #directionsContainer {
     margin-bottom: 0px; }
@@ -650,9 +680,6 @@ html, body {
   .detailsecond {
     font-size: 23px;
     line-height: 27px; }
-
-  #date, #dateMobile, #dateMobileTop {
-    top: 0px; }
 
   #container15 {
     width: 100%; }
