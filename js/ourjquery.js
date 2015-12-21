@@ -28,7 +28,7 @@ jQuery(document).ready(function ($) {
          navbackground.css("opacity", 1);
         }
 
-        if ($( window ).width() < 599) {
+        if ($( window ).width() < 768) {
             textCenter = $('#text-center-mobile')
         //    textCenter.text(height+"  "+secondPage.offset().top);
             var titleHeight = $(window).scrollTop() +160;
@@ -77,26 +77,54 @@ jQuery(document).ready(function ($) {
                 textCenterTop.fadeOut(fadeoutTime);
              }
         }
-        else if ($( window ).width() < 599) {
+        else if ($( window ).width() > 768 && $( window ).width() < 992) {
             textCenter = $('#text-center-mobile')
         //    textCenter.text(height+"  "+secondPage.offset().top);
             var titleHeight = $(window).scrollTop() +160;
             var delayHeight = $(window).scrollTop()+300;
+            thirdPage = $('#container3mobile');
+            registryPage = $('#container10mobile')
             var fadeoutTime = 700;
-             if (height+120 <  secondPage.offset().top)
+             if (height < 200)
              {
                  textCenter.text("May 6, 2016");
                  textCenter.fadeIn(fadeoutTime);
+                 textCenterTop.fadeOut(fadeoutTime);
              }
-             else if (height+50 <  secondPage.offset().top){
-                textCenter.text("Love Story");
-                 textCenter.fadeIn(fadeoutTime);
+             else if (height+200 > secondPage.offset().top && height < secondPage.offset().top) {
+
+                textCenterTop.fadeIn(fadeoutTime);
              }
-             else 
+             else if (height+420 > thirdPage.offset().top && height+230 < thirdPage.offset().top) {
+
+                textCenterTop.text("The Wedding");
+                textCenterTop.fadeIn(fadeoutTime);
+             }
+             else if (height+420 > partyPage.offset().top && height+230 < partyPage.offset().top) {
+
+                textCenterTop.text("The Party");
+                textCenterTop.fadeIn(fadeoutTime);
+             }
+             else if (height+420 > registryPage.offset().top && height+230 < registryPage.offset().top) {
+
+                textCenterTop.text("The Registry");
+                textCenterTop.fadeIn(fadeoutTime);
+             }
+             else if (height+420 > galleryPage.offset().top && height+230 < galleryPage.offset().top) {
+
+                textCenterTop.text("Our Gallery");
+                textCenterTop.fadeIn(fadeoutTime);
+             }
+             else if (height+420 > rsvpPage.offset().top && height+230 < rsvpPage.offset().top) {
+
+                textCenterTop.text("RSVP");
+                textCenterTop.fadeIn(fadeoutTime);
+             }
+             else
              {
-                
-                 textCenter.fadeOut(fadeoutTime);
-             }
+                textCenter.fadeOut(fadeoutTime);
+                textCenterTop.fadeOut(fadeoutTime);
+             }  
         }
         else {
             var titleHeight = $(window).scrollTop() +160;
@@ -130,7 +158,7 @@ jQuery(document).ready(function ($) {
                 textCenter.text("The Registry");
                 textCenter.fadeIn(fadeoutTime);
              }
-             else if (height >= galleryPage.offset().top-200 && height < galleryPage.offset().top-5)
+             else if (height >= galleryPage.offset().top-320 && height < galleryPage.offset().top-130)
              {
                 textCenter.text("Our Gallery");
                 textCenter.fadeIn(fadeoutTime);
