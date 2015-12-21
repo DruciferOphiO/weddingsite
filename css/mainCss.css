@@ -659,8 +659,14 @@ html, body {
   #container2 {
     padding-top: 50px; }
 
+  #slide6 {
+    padding-bottom: 100px; }
+
   #directionsContainer {
     margin-bottom: 0px; }
+
+  #slide11 {
+    padding-bottom: 50px; }
 
   #cedarHistory {
     margin-bottom: 0px; }
