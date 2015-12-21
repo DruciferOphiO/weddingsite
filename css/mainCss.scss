@@ -160,7 +160,7 @@ $linkfont: Helvetica, Arial, san-serif;
     }
 
   .main{
-    width: 100%;
+    width: 100.5%;
     height: 100%;
     position: relative;
   }
@@ -268,25 +268,26 @@ $linkfont: Helvetica, Arial, san-serif;
     height: auto;
     display: inline-block;
     padding: 0px;
-    top:5px;
   }
   
   #slide10, #slide10mobile{
     background-size: contain;
     background-repeat: no-repeat;
     background-position:left top;
-    height: 10%;
+    height: 30%;
   }
 
         #slide10mobile{
     background-image: url("../img/homeregistrymobile.jpg");
     background-position: 0px -5px;
     margin: 0px;
-    height: 30%;
+    top: -5px;
   }
 
         #slide10{
     background-image: url("../img/HatchMyHouse.png");
+    top:-5px;
+    
   }
   
         #slide11{
@@ -294,6 +295,7 @@ $linkfont: Helvetica, Arial, san-serif;
     background-repeat: repeat;
     height:auto;
     padding: 0px;
+    top:-5px;
   }
   
   #slide12 ,#slide12mobile{
@@ -305,6 +307,7 @@ $linkfont: Helvetica, Arial, san-serif;
 
   #slide12mobile{
     background-image: url("../img/honeymoonregistrymobile.jpg");
+    top: -5px;
   }
 
   #slide12{
@@ -316,6 +319,7 @@ $linkfont: Helvetica, Arial, san-serif;
     background-repeat: repeat;
     height:auto;
     padding-bottom: 200px;
+    top: -5px;
     
   }
   
@@ -324,6 +328,7 @@ $linkfont: Helvetica, Arial, san-serif;
     background-repeat: repeat;
     height:auto;
     padding-bottom: 200px;
+    top: -5px;
   }
   
   #slide15{
@@ -331,6 +336,7 @@ $linkfont: Helvetica, Arial, san-serif;
     background-repeat: repeat;
     height:auto;
     padding: 0px;
+    top: -5px;
   }
   
 
@@ -492,7 +498,8 @@ $linkfont: Helvetica, Arial, san-serif;
     vertical-align:middle;
       .imageContainer {
         .framedPic {
-          width: 98.75%
+          width: 100%;
+          margin-bottom: 5px;
         }
       }
   }
@@ -681,6 +688,7 @@ $linkfont: Helvetica, Arial, san-serif;
       left: 99px;
       top: 24px;
     }
+
     .monogram-mobile #monogram-2 {
       width: 80px;
       height: auto;
@@ -694,12 +702,39 @@ $linkfont: Helvetica, Arial, san-serif;
       display:inline-block;
       vertical-align:middle;
     }
+    #drewImage{
+      width: 100%;
+    }
+    #gelImageContainer{
+      width: 98.75%;
+    }
     .imageContainer{
-    position: absolute;
-    width: 95%;
+      position: relative;
+    }
+    #date, #dateMobile, #dateMobileTop{
+    top: 100px;
     }
     #slide2{
-    height:100%;
+    height:auto;
+    }
+    #container2{
+      height: auto;
+    }
+    
+    #container4{
+      height: auto;
+    }
+    
+    #row4{
+      height: auto;
+      margin-bottom: 50px;
+    }
+    
+    #row6{
+      height: auto;
+    }
+    #hotelsContainer{
+      margin-bottom: 50px;
     }
   }
   
@@ -729,14 +764,12 @@ $linkfont: Helvetica, Arial, san-serif;
       }
     }
     #container2{
-      padding-top: 0px;
+      padding-top: 50px;
     }
     #directionsContainer {
       margin-bottom: 0px;
     }
-    #hotelsContainer {
-      margin-bottom: 0px;
-    }
+ 
     #rehersal {
       margin-bottom: 0px;
     }
@@ -752,9 +785,7 @@ $linkfont: Helvetica, Arial, san-serif;
       font-size: 23px;
       line-height: 27px;
     }
-    #date, #dateMobile, #dateMobileTop{
-    top: 0px;
-    }
+    
     #container15{
     width: 100%
     }
